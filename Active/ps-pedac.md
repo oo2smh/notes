@@ -32,10 +32,10 @@
 
 - `PEDAC` = Understand Problem, Examples, Data Structures, Algorithm, Code with intent
 - `ABC` =  Acclimate/Align to the prob, Buckets Blueprint (write a plan), Code & Console.log
-- `PPP` = Prep, Plan, Produce
+- `PPP` = Prep (PE steps), Plan (DA steps), Produce (C step)
 
 ## _ASSUMPTIONS_
-> The problem typically does not give enough info. Looking at the examples and text, some assumptions need to be made. Ask your interviewer to clarify any ambiguities that you may have.
+> The problem typically does not give enough info. Looking at the examples and text, some assumptions need to be made. Ask your interviewer to clarify any ambiguities that you may have. Here are some things to be on the lookout for separated by the common datatype that you may encounter.
 <!--~~~~~~~~~~~~~~~~~~-->
 
 <details> <summary>🐝 General Lookouts</summary>
@@ -46,9 +46,9 @@
   - Use interval notation from mathematics [exclusive] and (inclusive) to specify possible values
 - Input Validation
   - Can we assume that the input is always a certain data type?
-- If we can assume the data type, can we assume that within that data type, it won't be a weird value such as 0, -0, <0, '', [], etc?
-- Definitions of terms
-- Examples: word, palindrome,adjacent, consecutive, etc
+    - If we can assume the data type, can we assume that within that data type, it won't be a weird value such as `0, -0, <0, '', []`?
+- Term Definitions
+  - Examples: word, palindrome,adjacent, consecutive, etc
 </details> <!---------------------->
 
 <details> <summary>🐝 Strings</summary>
@@ -65,33 +65,36 @@
 
 <details> <summary>🐝 Numbers</summary>
 
-- What Values?
-- Integer or Float
+- Integer or Float?
 - +/- 0
 - Negative numbers
 - NaN, +/- Infinity
 - Precision: Rounding
 - If the answer is a float, should the output be rounded to the tenth place? Hundreth?_
-- Float rounding error. There can't be a perfect representation of certain decimal based numbers using binary
+  - Float rounding error. There can't be a perfect representation of certain decimal based numbers using binary
 </details> <!---------------------->
 
-<details> <summary>🐝 Object</summary>
+<details> <summary>🐝 Objects</summary>
 
-- Return same input object ref or new obj ref
+- Return same input object ref or new obj ref?
 </details>
 
 ## _DATA_
-> As presented by Launch School, the *Data Structure* section consists of any intermediate data structure aka collections that might be needed to go from input to output. Everyone agrees on this, but there seems to be some discrepancy on what people put here. I broadened this category to hold all intermediate variables not just collections. This includes simple variable containers such as counters and tallies. I like to think of this section as the buckets section. Data structures are a bigger topic in computer science. I don't want to go too much into detail at this stage, but learned a little bit out of scope to better understand this section. Specifically, I learned about `ADT` and `Data structures.`
+> As presented by Launch School, the *Data Structure* section consists of any intermediate data structure aka collections that might be needed to go from input to output. Everyone agrees on this, but there seems to be some discrepancy on what people put here. I broadened this category to hold all intermediate variables not just collections. This includes simple variable containers such as counters and tallies. I like to think of this section as the buckets section.
+
+> Data structures are a bigger topic in computer science. I don't want to go too much into detail at this stage, but learned a little bit out of scope to better understand this section. Specifically, I learned about `ADT` and `Data structures.`
+<!--~~~~~~~~~~~~~~~~~~-->
+
+Look at the output. If it's a data structure, you know that you will need that data structure a a certain point. Ask yourself, what data structure will help you reach the output. Is sequence important? Use an array. Is it better approached from a key-value pair approach? Use a hash map.
+
 
 <details> <summary>🪰 ADT vs Data Structures</summary>
 
 - `Abstract Data Type(ADT)` = Conceptual model of the expected operations and possible values of a data type. It's told from the point of view of the user. The ('what') a datatype should do and not how it's implemented
-- [Lists (Sequence), Dictionary (Key value), Stack, Queue, Graph, Tree, Set]
+  - Lists (Sequence), Dictionary (Key value), Stack, Queue, Graph, Tree, Set
 - `Data Structure` = The how a ADT gets implemented in the real world. From the point of view of the implementer
-- [ {Array: [Static, Dynamic] }, Linked List, Hash Map, Adjacency List ]
+  - Static Arrays, Dynamic Arrays, Linked List, Hash Map, Adjacency List
 </details> <!---------------------->
-
-Look at the output. If it's a data structure, you know that you will need that data structure a a certain point. Ask yourself, what data structure will help you reach the output. Is sequence important? Use an array. Is it better approached from a key-value pair approach? Use a hash map.
 
 ## _ALGORITHM_
 <details><summary>🐝 Abstraction Layers</summary>
@@ -106,14 +109,33 @@ Look at the output. If it's a data structure, you know that you will need that d
 
 <details><summary>🐝 Buzzwords</summary>
 
-> Using the right verbs can help ensure that you stay at the right abstraction layer. There are programming specific words such as loops or conditionals. There are language specific words such as when referring to a specific syntax. Use general verbs for the high level overview to ensure that you stay abstracted
+> Using the right verbs can help ensure that you stay at the right abstraction layer. There are programming specific words such as loops or conditionals. There are language specific words such as when referring to a specific syntax. Use general verbs for the high level overview to ensure that you stay abstracted. Using the abstraction layers from the previous section, try to use verbs that match the appropriate abstraction level.
 <!--~~~~~~~~~~~~~~~~~~-->
-1. High Level: [Create, Store, Select, Sort, Repeat, Count, Search/Traverse, Insert, Combine, Return, Calculate , Remove, Transform, Find, Output, Update, Copy, Prompt, Check, Verify]
-2. Mid Level: [Set, Get/Retrieve, Iterate, Increment, Decrement, Initialize, Push, If, For, While, For]
-3. Language Specific: [Spread, Use Object.keys, Let, Const, etc]
+```yaml 🐜
+# HIGH LEVEL BUZZWORDS
+Variables: Create, Store
+Collections: Select/Filter, Transform, Traverse/Search, Sort, Update, Remove
+Loops: Repeat, Traverse/Search
+Conditionals: Check, Test, Verify, Confirm
+Operations: Calculate, Count, Combine
+Other: Return, Output, Prompt
+
+# MID LEVEL BUZZWORDS
+Variables: Set, Get/Retrieve, Initialize
+Collections: Iterate, Push, Pop, Append,
+Loops: Iterate, For, While
+Conditionals: If, Else if
+Operations: Increment, Decrement
+
+# LOW LEVEL BUZZWORDS
+# Syntax specific words referring to specific methods/operators
+Copy: Spread, concat
+Variable: let, const
+Looping: forEach, for..in, for..of
+```
 </details> <!---------------------->
 
-<details open><summary>🐝 Problem Solving Approach</summary>
+<details><summary>🐝 Problem Solving Approach</summary>
 
 > Start off with the brute-force approach if you don't see any patterns. Decompose into smaller steps and try to find any subprocesses.
 <!--~~~~~~~~~~~~~~~~~~-->
@@ -123,11 +145,33 @@ Look at the output. If it's a data structure, you know that you will need that d
 - Mix & Match algorithms to try to find a solution
 </details> <!---------------------->
 
-<details open><summary>🪰 General Patterns</summary>
+<details><summary>🪰 General Patterns</summary>
 
 1. Brute Force
 2. Decomposition: Divide and Conquer, Dynamic Programming, Branch and Bound
 3. Approximation: Greedy, Heuristic Approximation
+</details> <!---------------------->
+
+<details><summary>🪳 Formatting Pseudocode</summary>
+
+> Formatting is not a huge deal when writing the algorithm. At the same time, having a consistent way of writing the algorithm can provide a sense of consistency and comfort when confronted with a new problem.
+<!--~~~~~~~~~~~~~~~~~~-->
+```yaml
+# VISUAL MARKERS
+# Visual markers are placed in gutters
+# Placed before each step
+(@): subprocess at that step
+(*): difficult or most important step of algorithm
+(?): unsure about this step
+
+# PREFIXES
+# placed before var for additional info
+# used with separator (:)
+in:(name): input:(inputName)
+ou:(name): output:(outputName)
+i:(elem): iteration(elemName)
+v:(name): variable(varName)
+```
 </details> <!---------------------->
 
 ## _CODE WITH INTENT_
@@ -181,24 +225,12 @@ PROCESS
   - FALSE: SUBTRACT 1 to counter
   RETURN counter variable
 
-# VISUAL MARKERS
-- Visual markers can be used to provide extra clues to steps in my algorithm
-@ = subprocess at that step
-* = difficult or most important step of algorithm
-? = unsure about this step
-
-# PREFIXES
-- Use prefixes followed by the separator (:) to indicate variables in the algorithm. You can be much more specific about what type of variable it is too
-in:counter = input:(nameOfInputVar)
-ou:name = output:(name of output)
-i:elem = iteration elem
-v: varName
-
 @Subprocess #1
   CREATE stuff here
   CHECK if it's true
     TRUE: PERFORM an action
     FALSE: PERFORM another action
 */
+
 ```
 
