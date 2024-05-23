@@ -1,7 +1,10 @@
-<!---------------------->
-# 📣 COMMANDS
-<!---------------------->
-## MODAL SHIFTS
+<!--==================-->
+# 📣 Commands
+<!--==================-->
+## _MODAL SHIFTS_
+> The main modes are `Insert` and `Normal` mode. The other modes are helpful. There are some nuances to keep in mind. For instance, in `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead.
+<!--~~~~~~~~~~~~~~~~~~-->
+
 ```yaml
 # TO NORMAL
 <C-c>: Cancel
@@ -16,7 +19,7 @@
 <A>: End of line
 
 # TO COMMAND (:)
-# Can only enter the command mode from normal or visual mode
+# Enter cmd mode from normal/visual
 <:>: Type colon followed by command
 </>: Used to search a phrase
 
@@ -29,15 +32,16 @@ v: Visual-char mode
 # OBSCURE MODES
 <C-o>: Normal-insert mode
 <S-r>: Replace mode
-<none>: Operator Peding Mode (split moment when you type operator and comp is waiting for a motion)
-<gh>: Select mode (created to make vim act more like conventional text editors. Avoid)
+<none>: Operator Peding Mode
+<gh>: Select mode
 
 # in visual block mode <C-c> doesn't work as expected
 ```
 
-## DIMENSIONAL SHIFTS
-- Dimensions are the organizational nouns that exist within vim
-- Windows, Buffers, Registers, Marks, Quick Fix List
+## _DIMENSIONAL SHIFTS_
+> `Dimensions` are the organizational nouns that exist within vim. This term isn't officially endorsed by vim, but I coined it to chunk together the different entities/nouns that exist within vim. Some of these include windows, buffers, registers, marks, and the quick-fix list.
+<!--~~~~~~~~~~~~~~~~~~-->
+
 ```yaml
 # WINDOWS
 <C-w>(hjkl): Focus on window to left, down, right, up
@@ -46,19 +50,19 @@ v: Visual-char mode
 (:s): Horizontal split
 
 # SPECIAL REGISTERS
-=: Expression register
-0: Yank register
-": Unnamed register
-*: System clipbaord
-+: System Clipboard
+(=): Expression register
+(0): Yank register
+("): Unnamed register
+(*): System clipbaord
+(+): System Clipboard
 ```
 
-## CURSOR SHIFTS (within a file)
+## _CURSOR SHIFTS_
+> Navigation is a big part of vim. It might be vim's biggest selling point. `Motions` is a loaded word defined slightly different depending on who you ask. I define it as anything that moves the cursor and can be used with operator commands. An anatomy of a motion is `(count)(motion)`. There are cursor shifts search as `Search` and `Scroll` actions which are not used with operators actions which are not used with operators.
+
+> The main types of navigation are horizontal and vertical movements. Try to be efficient and get as close to your target with the fewest amount of keystrokes. Using the count can be helpful as well, but might not be worth the mental overload. Generally, it's advisable to use the relative movements `0$gM` for horizontal or  `HML` for vertical movements and then navigate to your code. If the code is outside of the visible screen use `<C-d>` `<C-u>` to scroll down. Alternatively, you can use marks, `*/#` and/or `/(searchWord)` to navigate out of the screen.
 ```yaml
-# A specific type of cursor shift is a motion. Motions are cursor shifts that
-Motions are anything that moves the cursor. It can often be used with operator commands
 # Used in Normal & Visual Modes
-# Anatomy of a motion is (count)(motion)
 
 # SIMPLE MOTION (1 char movment)
 h: left 1 ('hatchback')
@@ -75,8 +79,9 @@ f/F: to next/prev char in line
 t/T: to next/prev char before search-char in line
 (;): next f/F or t/T match
 (,): previous f/F or t/T match
-# Relative movements in a line
-0: beginning of line
+
+# HORIZONTAL RELATIVE MOTIONS
+(0): beginning of line
 ^: first non-space char of line
 $: last char of line
 g_: last non-space char of line
@@ -92,15 +97,19 @@ gm: middle of screen total width if not, goes to end of char
 <S-[>: prev island gap
 <S-)>: next sentence or (1st line of island and island end-gap)
 <S-(>: prev sentence or (1st line of island and island end-gap)
+
+# VERTICAL RELATIVE MOTIONS
 H: High point of visual screen
 M: Mid point of visual screen
 L: Low point of visual screen
+gg: go to 1st line of file
+G: go to last line of file
+
+# VERTICAL PRECISE MOVEMENTS
 ('mark): Jump to set mark
 (m(char)): set mark with char name
 (:num): go to line (num)
 (numG): go to line (num)
-gg: go to 1st line of file
-G: go to last line of file
 
 # SCROLLS
 <C-e>: Scroll 1 line down
@@ -117,6 +126,9 @@ n/<S-n>: Jump to next/prev highlighted word
 ```
 
 ## COMMANDS
+> Other than inserting, commands are the way to perform actions in vim. Actions include text manipulation (deletion, replacing, adding lines, formatting, copying, etc). There are generally 3 types of commands avaiable. The first is a simple command which has the anatomy of `(count)(cmd)`. The next type of command is an operator with the anatomy of `(count)(cmd)(motion)`. Lastly, the ex commands are prefixed with a `:`. These are for long-range actions. Many if not all of the operations can be done file-wide.
+<!--~~~~~~~~~~~~~~~~~~-->
+
 ```yaml
 # SIMPLE
 # Anatomy of simple commands is (count)(cmd)
@@ -146,9 +158,10 @@ gw: wrapping
 (>>): Indent right
 
 # TEXT OBJECTS
-# separate selections used specifically as a range in place of a motion
+# can be used in place of a motion
 # Anatomy: (range: ia)(selection)
-# range refers to inner or around (including surrounding whitespace)
+# range refers to inner or around
+# selections are listed below
 w: word
 s: sentence
 p: paragraph
@@ -167,19 +180,21 @@ m: move
 e: open/edit a file
 !(cmd): execute a shell cmd
 set: set an option
+set tw=0: set text-width = 0 (use in md files)
 help [subject]: show help for a specific subject
 
-## SPECIAL RANGE SPECIFICATIONS
+## SPECIAL EX RANGE SPECIFICATIONS
 (%): whole file
 (.): current line
 ($): last line
 (\): escape char
 ```
 
-## INSERT MODE CMDS
+## _INSERT MODE CMDS_
+> Sometimes instead of going out of `Insert Mode` to move the cursor or delete a char/word. Luckily, vim provides common actions you can take without having to leave insert mode. I also added certain combos that chain multiple vim commands for common actions. It's easier to think of these combos as its own chunk.
 ```yaml
 # Insert Mode Cursor Moves
-<C-c>la:
+<C-c>la: Move cursor to the right 1 char
 <C-c>A: Move to end of line
 <C-c>I: Move to beginning of line
 <C-c>Bi: Move cursor to front of prev WORD
@@ -191,15 +206,15 @@ help [subject]: show help for a specific subject
 <C-t>: Tab
 ```
 
-## VISUAL MODE CMDS
+## _VISUAL MODE CMDS_
 ```yaml
 o: change cursor endpoint
 gv: select last visual selection
 ```
 
-<!---------------------->
-# 👎 INCOMPATIBLE WITH CODERPAD
-<!---------------------->
+<!--==================-->
+# 👎 Incompatible With Coderpad
+<!--==================-->
 ```yaml
 # MOTIONS
 H/M/L: High, Mid, Low
