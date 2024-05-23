@@ -1,5 +1,5 @@
 <!--==================-->
-# 📣 Commands
+# 📣 Shorthands
 <!--==================-->
 ## _MODAL SHIFTS_
 > The main modes are `Insert` and `Normal` mode. The other modes are helpful. There are some nuances to keep in mind. For instance, in `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead.
@@ -125,7 +125,7 @@ G: go to last line of file
 n/<S-n>: Jump to next/prev highlighted word
 ```
 
-## COMMANDS
+## _COMMANDS_
 > Other than inserting, commands are the way to perform actions in vim. Actions include text manipulation (deletion, replacing, adding lines, formatting, copying, etc). There are generally 3 types of commands avaiable. The first is a simple command which has the anatomy of `(count)(cmd)`. The next type of command is an operator with the anatomy of `(count)(cmd)(motion)`. Lastly, the ex commands are prefixed with a `:`. These are for long-range actions. Many if not all of the operations can be done file-wide.
 <!--~~~~~~~~~~~~~~~~~~-->
 
