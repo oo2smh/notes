@@ -5,7 +5,6 @@
 2. Commands
   - [Constructors, Implicit Coercions, Core, Other]
 3. Deets
-  - []
 4. Examples
 
 <!---------------------->
@@ -27,7 +26,7 @@ value = 10: opt param
 <!---------------------->
 # 📣 COMMANDS
 <!---------------------->
-[Constructors, Implicit Coercions, Core, Other]
+- [Constructors, Implicit Coercions, Core, Other]
 
 ## CONSTRUCTORS
 ```js

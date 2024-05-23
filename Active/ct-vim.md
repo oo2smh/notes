@@ -1,7 +1,7 @@
 <!---------------------->
 # 📣 COMMANDS
 <!---------------------->
-## Modal Shifts
+## MODAL SHIFTS
 ```yaml
 # TO NORMAL
 <C-c>: Cancel
