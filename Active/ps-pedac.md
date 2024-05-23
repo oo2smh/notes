@@ -88,7 +88,7 @@
 Look at the output. If it's a data structure, you know that you will need that data structure a a certain point. Ask yourself, what data structure will help you reach the output. Is sequence important? Use an array. Is it better approached from a key-value pair approach? Use a hash map.
 
 
-<details> <summary>🪰 ADT vs Data Structures</summary>
+<details> <summary>🐜 ADT vs Data Structures</summary>
 
 - `Abstract Data Type(ADT)` = Conceptual model of the expected operations and possible values of a data type. It's told from the point of view of the user. The ('what') a datatype should do and not how it's implemented
   - Lists (Sequence), Dictionary (Key value), Stack, Queue, Graph, Tree, Set
@@ -145,14 +145,14 @@ Looping: forEach, for..in, for..of
 - Mix & Match algorithms to try to find a solution
 </details> <!---------------------->
 
-<details><summary>🪰 General Patterns</summary>
+<details><summary>🐜 General Patterns</summary>
 
 1. Brute Force
 2. Decomposition: Divide and Conquer, Dynamic Programming, Branch and Bound
 3. Approximation: Greedy, Heuristic Approximation
 </details> <!---------------------->
 
-<details><summary>🪳 Formatting Pseudocode</summary>
+<details><summary>🦋 Formatting Pseudocode</summary>
 
 > Formatting is not a huge deal when writing the algorithm. At the same time, having a consistent way of writing the algorithm can provide a sense of consistency and comfort when confronted with a new problem.
 <!--~~~~~~~~~~~~~~~~~~-->
