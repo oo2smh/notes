@@ -2,7 +2,7 @@
 # 📣 Shorthands
 <!--==================-->
 ## _MODAL SHIFTS_
-> The main modes are `Insert` and `Normal` mode. The other modes are helpful. There are some nuances to keep in mind. For instance, in `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead.
+> The main modes are `Insert` and `Normal`. In `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead (`Esc` or `<C-[>`.
 <!--~~~~~~~~~~~~~~~~~~-->
 
 ```yaml
@@ -58,7 +58,7 @@ v: Visual-char mode
 ```
 
 ## _CURSOR SHIFTS_
-> Navigation is a big part of vim. It might be vim's biggest selling point. `Motions` is a loaded word defined slightly different depending on who you ask. I define it as anything that moves the cursor and can be used with operator commands. An anatomy of a motion is `(count)(motion)`. There are cursor shifts search as `Search` and `Scroll` actions which are not used with operators actions which are not used with operators.
+> Navigation is a big part of vim. It might be vim's biggest selling point. `Motions` is a loaded word defined slightly different depending on who you ask. I define it as anything that moves the cursor and can be used with operator commands. An anatomy of a motion is `(count)(motion)`. There are cursor shifts search as `Search` and `Scroll` actions which are not used with operators.
 
 > The main types of navigation are horizontal and vertical movements. Try to be efficient and get as close to your target with the fewest amount of keystrokes. Using the count can be helpful as well, but might not be worth the mental overload. Generally, it's advisable to use the relative movements `0$gM` for horizontal or  `HML` for vertical movements and then navigate to your code. If the code is outside of the visible screen use `<C-d>` `<C-u>` to scroll down. Alternatively, you can use marks, `*/#` and/or `/(searchWord)` to navigate out of the screen.
 ```yaml
