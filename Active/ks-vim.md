@@ -2,8 +2,8 @@
 # 📣 Shorthands
 <!--==================-->
 ## _MODAL SHIFTS_
-> The main modes are `Insert` and `Normal`. In `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead (`Esc` or `<C-[>`.
-<!--~~~~~~~~~~~~~~~~~~-->
+> [!Note]
+> The main vim modes are `Insert` and `Normal`. In `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead (`Esc` or `<C-[>`.
 
 ```yaml
 # TO NORMAL
@@ -34,18 +34,15 @@ v: Visual-char mode
 <S-r>: Replace mode
 <none>: Operator Peding Mode
 <gh>: Select mode
-
 # in visual block mode <C-c> doesn't work as expected
 ```
-
 ## _DIMENSIONAL SHIFTS_
 > `Dimensions` are the organizational nouns that exist within vim. This term isn't officially endorsed by vim, but I coined it to chunk together the different entities/nouns that exist within vim. Some of these include windows, buffers, registers, marks, and the quick-fix list.
-<!--~~~~~~~~~~~~~~~~~~-->
 
 ```yaml
 # WINDOWS
-<C-w>(hjkl): Focus on window to left, down, right, up
-<C-w>(c): Close the current window
+<C-w-[hljk]>: Focus on window to left, down, right, up
+<C-w-c>: Close the current window
 (:vs): Vertical split
 (:s): Horizontal split
 
@@ -60,7 +57,9 @@ v: Visual-char mode
 ## _CURSOR SHIFTS_
 > Navigation is a big part of vim. It might be vim's biggest selling point. `Motions` is a loaded word defined slightly different depending on who you ask. I define it as anything that moves the cursor and can be used with operator commands. An anatomy of a motion is `(count)(motion)`. There are cursor shifts search as `Search` and `Scroll` actions which are not used with operators.
 
-> The main types of navigation are horizontal and vertical movements. Try to be efficient and get as close to your target with the fewest amount of keystrokes. Using the count can be helpful as well, but might not be worth the mental overload. Generally, it's advisable to use the relative movements `0$gM` for horizontal or  `HML` for vertical movements and then navigate to your code. If the code is outside of the visible screen use `<C-d>` `<C-u>` to scroll down. Alternatively, you can use marks, `*/#` and/or `/(searchWord)` to navigate out of the screen.
+> [!Tip]
+> The main types of navigation are horizontal and vertical movements. Try to be efficient and get as close to your target with the fewest amount of keystrokes. Using the count can be helpful as well, but might not be worth the mental overload. Generally, it's advisable to use the relative movements `0$gM` for horizontal or `HML` for vertical movements and then navigate to your code. If the code is outside of the visible screen use `<C-d>` `<C-u>` to scroll down. Alternatively, you can use marks, `*/#` and/or `/(searchWord)` to navigate out of the screen.
+
 ```yaml
 # Used in Normal & Visual Modes
 
@@ -192,6 +191,7 @@ help [subject]: show help for a specific subject
 
 ## _INSERT MODE CMDS_
 > Sometimes instead of going out of `Insert Mode` to move the cursor or delete a char/word. Luckily, vim provides common actions you can take without having to leave insert mode. I also added certain combos that chain multiple vim commands for common actions. It's easier to think of these combos as its own chunk.
+
 ```yaml
 # Insert Mode Cursor Moves
 <C-c>la: Move cursor to the right 1 char

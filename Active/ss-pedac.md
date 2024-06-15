@@ -1,12 +1,4 @@
 <!--==================-->
-# 📑 Outline
-<!--==================-->
-1. Keywords
-2. Deets
-3. Circus
-4. Examples
-
-<!--==================-->
 # 🔑 Keywords
 <!--==================-->
 ```md
@@ -22,13 +14,11 @@
   - Buzzwords
   - Abstraction Levels
 ```
-
 <!--==================-->
 # 🪲 Deets
 <!--==================-->
 ## _PROBLEM SOLVING MODELS_
 > Launch School introduces a mental framework to systemize problem solving. It uses PEDAC an acronym for problem-solving. ABC and PPP are my personal adaptations to the PEDAC process which creates additional chunks around the PE/DA steps of PEDAC. In the end, they are all the same framework.
-<!--~~~~~~~~~~~~~~~~~~-->
 
 - `PEDAC` = Understand Problem, Examples, Data Structures, Algorithm, Code with intent
 - `ABC` =  Acclimate/Align to the prob, Buckets Blueprint (write a plan), Code & Console.log
@@ -36,7 +26,6 @@
 
 ## _ASSUMPTIONS_
 > The problem typically does not give enough info. Looking at the examples and text, some assumptions need to be made. Ask your interviewer to clarify any ambiguities that you may have. Here are some things to be on the lookout for separated by the common datatype that you may encounter.
-<!--~~~~~~~~~~~~~~~~~~-->
 
 <details> <summary>🐝 General Lookouts</summary>
 
@@ -83,7 +72,6 @@
 > As presented by Launch School, the *Data Structure* section consists of any intermediate data structure aka collections that might be needed to go from input to output. Everyone agrees on this, but there seems to be some discrepancy on what people put here. I broadened this category to hold all intermediate variables not just collections. This includes simple variable containers such as counters and tallies. I like to think of this section as the buckets section.
 
 > Data structures are a bigger topic in computer science. I don't want to go too much into detail at this stage, but learned a little bit out of scope to better understand this section. Specifically, I learned about `ADT` and `Data structures.`
-<!--~~~~~~~~~~~~~~~~~~-->
 
 Look at the output. If it's a data structure, you know that you will need that data structure a a certain point. Ask yourself, what data structure will help you reach the output. Is sequence important? Use an array. Is it better approached from a key-value pair approach? Use a hash map.
 
@@ -100,7 +88,6 @@ Look at the output. If it's a data structure, you know that you will need that d
 <details><summary>🐝 Abstraction Layers</summary>
 
 > Info can be broken down from more general to more specific. Start off with a bird's eye view and generally zoom into the details. There are generally 3 layers of `abstraction`. Within each layer, you wanna `decompose` and break down the steps into chunks. Make sure to keep each chunk appropriately abstracted for its layer. Stay in the top 2 layers when writing the algorithm. Don't overcrowd your algorithm with unnecessary complexity.
-<!--~~~~~~~~~~~~~~~~~~-->
 1. High Level Overview (ELI5)
 2. Programming Speak (Language agnostic)
 3. Language implementation (Language specific syntax & quirks)
@@ -110,7 +97,6 @@ Look at the output. If it's a data structure, you know that you will need that d
 <details><summary>🐝 Buzzwords</summary>
 
 > Using the right verbs can help ensure that you stay at the right abstraction layer. There are programming specific words such as loops or conditionals. There are language specific words such as when referring to a specific syntax. Use general verbs for the high level overview to ensure that you stay abstracted. Using the abstraction layers from the previous section, try to use verbs that match the appropriate abstraction level.
-<!--~~~~~~~~~~~~~~~~~~-->
 ```yaml 🐜
 # HIGH LEVEL BUZZWORDS
 Variables: Create, Store
@@ -138,7 +124,6 @@ Looping: forEach, for..in, for..of
 <details><summary>🐝 Problem Solving Approach</summary>
 
 > Start off with the brute-force approach if you don't see any patterns. Decompose into smaller steps and try to find any subprocesses.
-<!--~~~~~~~~~~~~~~~~~~-->
 - Pattern Finding
 - Categorize the problem from your mental library
 - Simplify the problem & solution
@@ -155,7 +140,6 @@ Looping: forEach, for..in, for..of
 <details><summary>🦋 Formatting Pseudocode</summary>
 
 > Formatting is not a huge deal when writing the algorithm. At the same time, having a consistent way of writing the algorithm can provide a sense of consistency and comfort when confronted with a new problem.
-<!--~~~~~~~~~~~~~~~~~~-->
 ```yaml
 # VISUAL MARKERS
 # Visual markers are placed in gutters
@@ -192,8 +176,7 @@ v:(name): variable(varName)
 # 🎪 CIRCUS
 <!--==================-->
 ## _ADT AND DATA STRUCTURE TO BUILDINGS_
-> To give an analogy, I like to think of ADTs as a blueprint for a building. The architect thought about what the building should be: the entryways the exits, etc. However, the building itself is not built. *Data Structures* are the implementation of the concept which would be the actual building in reality. Lastly, even with the blueprint, there might be liberties taken by the construction company. That's likened to the language implemntation of each data structure.
-<!--~~~~~~~~~~~~~~~~~~-->
+> To give an analogy, I like to think of ADTs as a blueprint for a building. The architect thinks about what the building should be: the entryways the exits, etc. However, the building itself is not built. *Data Structures* are the implementation of the concept which is the actual building in reality. Lastly, even with the blueprint, there might be liberties taken by the construction company. That's likened to the language implementation of each data structure.
 
 <!--==================-->
 # 🧪 EXAMPLE
