@@ -3,7 +3,7 @@
 <!--==================-->
 ## _AMAZING MARVIN_
 > [!Note]
-> I decided to just use md as my todo list instead of Amazing Marvin (at least for the time being). I like AM, but the fact that it doesn't have vim keybindings or an easier way to navigate between tasks is uncomfortable. I I'll leave the keyboards here in case I decide to go back to AM in the future
+> I decided to just use md as my todo list instead of Amazing Marvin (at least for the time being). I like AM, but the fact that it doesn't have vim keybindings or an easier way to navigate between tasks is uncomfortable. I'll leave the keybindings here in case I decide to go back to AM in the future.
 
 ```yaml
 # A = ALT, S = SHIFT, C = CTRL, W = SUPER
