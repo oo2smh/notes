@@ -218,5 +218,6 @@ gv: select last visual selection
 ```yaml
 # MOTIONS
 H/M/L: High, Mid, Low
+i(C-w, C-h): Insert specific delete shorthands
 Ex cmds: Most ex cmds don't work
 ```
