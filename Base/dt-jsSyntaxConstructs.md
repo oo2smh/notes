@@ -33,7 +33,7 @@
 <!--==================-->
 # 🪲 Deets
 <!--==================-->
-## Expressions
+## _Expressions_
 > [!Important]
 >Expressions are anything that evaluates to a value. The value that it evaluates to is called a `return value`. This includes simple `primary` values such as (1, 'string', true). However, it typically refers to expressions with more than 1 value. Most of the expressions are based off of the operator that it uses. These types of expressions are called `operations`. The other expressions I am calling `other-expressions`. Original I know.
 
@@ -50,7 +50,7 @@ useful_return = false
 associativity = "RTL"
 
 [Gotchas]
-let/const = "When used with let/const = does not equate to assignment"
+let_const = "When used with let || const = does not equate to assignment"
 obj_references = "Objects are stored as ref"
 ```
 ### New
@@ -132,7 +132,7 @@ bnb-str = 'obj:prefers-str coercion'
 ### Miscellaneous
 ```toml
 symbol-variants = ['comma', 'grouping', 'invocation']
-keyword-variants = [delete, await, void]
+keyword-variants = ["delete", "await", "void"]
 useful_return = false
 ```
 
@@ -162,7 +162,7 @@ nullish = "??. It's a pseudo logical operator"
 
 ### Classification
 ```toml
-types = [in, instanceOf, typeof]
+types = ["in", "instanceOf", "typeof"]
 
 [in]
 returns = 'boolean'
@@ -187,7 +187,7 @@ gotchaNull = "typeof null => 'object'"
 ```toml
 [Primary]
 # primitives, identifiers, this
-types = ['primitives', 'identifiers', this]
+types = ['primitives', 'identifiers', "this"]
 
 [Object Initializers]
 types = 'obj/arr literals {} & []'

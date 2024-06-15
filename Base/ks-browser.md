@@ -1,7 +1,7 @@
 <!--==================-->
-# 🎹 KEYMAPS
+# 🎹 Keymaps
 <!--==================-->
-## BROWSER DEFAULTS
+## _BROWSER DEFAULTS_
 > [!Tip]
 > There are some keyboard shortcuts that overlap between the browser and the extension counterpart. When possible use the defaults. For instance to scroll, prefer using Space/<S-Space> over the Vimium counterpart of d/u.
 ```yaml
@@ -21,13 +21,13 @@
 <A-left>/<A-right>: Go back/forward in history
 ```
 
-## EXTENSIONS
+## _EXTENSIONS_
 ```yaml
 <C-S-u>: Bitwarden toggle
 A-g>: Toggle Dark mode #goggles
 ```
 
-## VIMIUM C
+## _VIMIUM C_
 > [!Note]
 > Vimium provides a lot of features. I am mainly interested in the f/F feature to navigate quickly within a page. As mentioned above, use the browser defaults whenever possible.
 

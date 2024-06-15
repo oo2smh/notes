@@ -70,7 +70,6 @@ Function Execution Context
   - `Closure`: combination of a fn bundled together with references to its lexical env. Practically speaking, this means fns retain variables from parent scope even after parent fn has finished executing.
     - Closure is essentially the fn reference (identifier), environment record, and its outer lexical environment.
 
-> [!Important]
 > Closure is a concrete noun. It exists in reality. It is not a noun describing an abstract concept like love or peace. Often times, people will define closures by its effects. For instance, they might say closure is the ability of an inner function to remember its parent function even after the parent function has executed. This is true. This is more aptly described as one capability of a closure. It describes what a closure does. It does not define what a closure is.
 </details>
 
@@ -78,7 +77,6 @@ Function Execution Context
 
 > During the execution phase, the interpreter goes line by line and executes code. Whenever there is a `=` operator the variable is updated. If no value is given, the variable is initialized to `undefined`. Statements are executed. Further function calls are pushed to the call stack.
 
-> [!Note]
 > The closure lives in the heap. But if it persists unnecessarily, it consumes memory. There has to be a better way. JS garbage collection can detect closures that aren't used and then `mark and sweep` them. Generally speaking, if a function doesn't have any inner functions, the closure does not need to persist. It can be garbage collected when a function is finished running. If however, an inner function exists, the closure should remain within the heap because it might be of use in the future. Note that closures only pertain to functions. It does not pertain to other block scopes.
 
 </details>

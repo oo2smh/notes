@@ -1,9 +1,9 @@
 <!--==================-->
-# 🔑 COMMANDS
+# 🔑 Commands
 <!--==================-->
 > W = Super Key, A = Alt, C = Ctrl, S = Shift. `[abc]` = Char class shorthand syntax. For instance <C-[abc]> means <C-a>, <C-b> and <C-c> are all valid commands
 
-## HYPR
+## _HYPR_
 ```yaml
 <CS-[hjkl]>: Move window focus (left/down/up/right)
 <AS-[hjkl]>: Move window (left/down/up/right)
@@ -35,7 +35,7 @@
 <WA-d>: Close dunst(notification daemon) popup
 ```
 
-## TERMINAL
+## _TERMINAL_
 These are the default terminal shortcuts regardless of which terminal emulator you chooose to use
 
 ```yaml
@@ -50,7 +50,7 @@ These are the default terminal shortcuts regardless of which terminal emulator y
 Tab: Show autocomplete options (Tab to cycle between options)
 ```
 
-## ZELLIJ
+## _ZELLIJ_
 The main modifier for zellij is `ALT`. As others have noted using `CTRL` conflicts with some of the vim keybindings. Although zellij is feature rich, I will only use a small subset of the commands to reduce mental overhead. Commands listed here aren't comprehensive, but simply list the most used commands.
 
 I will use zellij with 3 main modes. Normal (default), Lock (to turn off zellij keybindings in case of keybinding conflicts), scroll
@@ -86,7 +86,7 @@ I will use zellij with 3 main modes. Normal (default), Lock (to turn off zellij 
 <w>: Session Manager
 ```
 
-## NNN
+## _NNN_
 ```yaml
 [hjkl]: [left,down,up,right]
 [1234]: Move to cxt [1234]

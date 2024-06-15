@@ -1,7 +1,7 @@
 <!--==================-->
-# 🎹 KEYMAPS
+# 🎹 Keymaps
 <!--==================-->
-## AMAZING MARVIN
+## _AMAZING MARVIN_
 > [!Note]
 > I decided to just use md as my todo list instead of Amazing Marvin (at least for the time being). I like AM, but the fact that it doesn't have vim keybindings or an easier way to navigate between tasks is uncomfortable. I I'll leave the keyboards here in case I decide to go back to AM in the future
 
@@ -42,7 +42,7 @@ Space: Quick Add Task/Project
 (Delete): Delete task/project
 ```
 
-## EXCALIDRAW
+## _EXCALIDRAW_
 ```yaml
 (7|p): brush
 (s[a-z]): Toggle[a-z colors]
@@ -58,7 +58,7 @@ Space: Quick Add Task/Project
 <CS-g>: Ungroup
 ```
 
-## GITHUB
+## _GITHUB_
 ```yaml
 (s): Search site
 (g[cipab]): Go to [code,issues,pull-requests,actions, projects]

@@ -749,9 +749,7 @@ let skipsEmpty = [forEach(), map(), reduce(), reduceRight(), flat()]
 
 <details><summary>🐝 Shallow vs Deep Copy</summary>
 
-> In JS, only shallow copies are created. A *shallow* copy means that object references are copied. Contrast that with a deep copy where the values of an object are copied, and saved to a different memory location. After creation, both items are distinct in a deep copy. A shallow copy is a copy whose properties share the same references as the source object from which the copy was made. Therefore, if you mutate the reference from the source copy, the change is reflected in the copy/copies as well.
-
-> JS array methods either mutate the caller or return a shallow copy.
+> In JS, only shallow copies are created. A *shallow* copy means that object references are copied. Contrast that with a deep copy where the values of an object are copied, and saved to a different memory location. After creation, both items are distinct in a deep copy. A shallow copy is a copy whose properties share the same references as the source object from which the copy was made. Therefore, if you mutate the reference from the source copy, the change is reflected in the copy/copies as well. JS array methods either mutate the caller or return a shallow copy.
 ```js
 const originalArray = [1, 'string', {a: 0, b: 2}];
 const copyArray = [...originalArray];
