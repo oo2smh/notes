@@ -114,12 +114,6 @@ NP.toPrecision([precision])
 
 > Note that `Arrays` and `Functions` are also considered to be specialized objects. These object methods, therefore, are available to these arrays and functions as well.
 
-> If you freeze an object, is it sealed as well? Yes. `📟 sealed`: Cannot delete properties. `📟 frozen`: Cannot delete or modify existing properties
-> ```js
-> const obj = {a: 1, b: 2};
-> Object.freeze(obj);
-> console.log(Object.isSealed(obj));
-> ```
 ```js 🎀 HI CA KEV SIFI
 Object.hasOwn(obj, prop)
 Object.is(val1, val2)
@@ -243,7 +237,7 @@ console.trace([objects]
 ## _STRINGS_
 <details><summary>🐜 One-Offs </summary>
 
-> [!Note] Code Point
+> [!Note]
 > Unicode is the encoding standard that maps a human readable character like `[a,b,1,2]` into a `code point`. A code point is a numerical representation of the character.$ Unicode uses hexadecimal (base 16) to represent the characters in a format of `U+xxxx`. UTF-8 and UTF-16 are both encoding systems. UTF-8 and UTF-16 are both encoding system that maps the Unicode code point into a binary machine code. The difference between them is that UTF-8 uses 8 bits to map out the code point while UTF-16 uses 16bits. Thus UTF-16 can encode more characters into binary.
 >
 > Note that both Unicode and UTF-16 both share the code point as a field. Therefore, in sources like MDN, the Unicode code point is sometimes referred to as the UTF-16 code point. These are referring to the same things. Additionally, even though the code point is encoded in hexadecimal, decimal based numbers (0-9) are more intuitive for humans. For this reason, methods such as `fromCharCode()` expects a decimal number and it gets converted to its hexademical equivalent.
@@ -276,43 +270,43 @@ gotchas = 'surrogate pairs count as length of 2'
 - Indexed Search `SP.indexOf`, `SP.lastIndexOf`, `SP.search()`
 - Iterable/Array `SP.match()`, `SP.matchAll()`
 
-```toml
+```md
 SP.startsWith(searchStr = 'undefined', [pos = 0])
 SP.endsWith(searchStr = 'undefined', [pos = str.length])
 SP.includes(searchStr = 'undefined', [pos = 0])
-# ==================================
-par-searchStr = 'Any non-regex valid value'
-par-pos = 'position to start search'
-return = 'boolean'
-invalid_args = 'regex -> TypeError'
-coercion = 'arg coerced to str'
+<!--==================-->
+- par-searchStr = 'Any non-regex valid value'
+- par-pos = 'position to start search'
+- return = 'boolean'
+- invalid_args = 'regex -> TypeError'
+- coercion = 'arg coerced to str'
 
 SP.match(regex = /(?:)/)]
-# ==================================
-return = 'array of matches || null (no matches)'
-coercion = 'arg -> regex'
-gotcha = 'use of g flag to get all matches, otherwise capture 1st match'
-gotcha = 'empty arg -> returns '']'
+<!--==================-->
+- return = 'array of matches || null (no matches)'
+- coercion = 'arg -> regex'
+- gotcha = 'use of g flag to get all matches, otherwise capture 1st match'
+- gotcha = 'empty arg -> returns '']'
 
 SP.matchAll(regex = /(?:)/)]
-# ==================================
-return = 'iterator obj of matches or empty iterator (no matches)'
-coercion = 'arg -> regex'
-errors = 'g flag is not present'
+<!--==================-->
+- return = 'iterator obj of matches or empty iterator (no matches)'
+- coercion = 'arg -> regex'
+- errors = 'g flag is not present'
 
 SP.indexOf(searchStr = 'undefined', [pos = 0])
 SP.lastIndexOf(searchStr = 'undefined', [pos = 0])
-# ==================================
-return = 'idx of 1st/last occurrence of searchStr || -1 (not found)'
-coercion = 'arg coerced to str'
-gotcha = 'empty searchStr results in pos'
+<!--==================-->
+- return = 'idx of 1st/last occurrence of searchStr || -1 (not found)'
+- coercion = 'arg coerced to str'
+- gotcha = 'empty searchStr results in pos'
 
 SP.search(regex = /(?:)/)
-# ==================================
-usage = 'regex version of indexOf'
-return = 'idx of 1st match || -1 (not found)'
-coercion = 'arg coerced to regex'
-gotcha = 'g flag has no effect'
+<!--==================-->
+- usage = 'regex version of indexOf'
+- return = 'idx of 1st match || -1 (not found)'
+- coercion = 'arg coerced to regex'
+- gotcha = 'g flag has no effect'
 ```
 </details>
 
@@ -320,39 +314,39 @@ gotcha = 'g flag has no effect'
 
 > There are many methods that do similar things with slight variances. It's good to be aware that these methods exist because other people might use a different method. However, for personal usage, I will default to my preferred way of doing things. For instance, for single character access, I will use `[]` for the most part or `at()` if I want to use negative indices. I will use `codePointAt()` over `charCodeAt()`. Lastly, `slice()` takes precedence over `substring()` because it can accept negative indices and thus makes it more flexible.
 ```toml
-SINGLE CHAR ACCESS
+[SINGLE CHAR ACCESS]
 # ==================================
 param = 'idx integer'
 coercion = 'arg -> int'
 
-SP.charAt(idx)
+[SP.charAt(idx)]
 # ---------------------------------
 return = 'char at idx || empty str'
 
-SP.at(idx)
+[SP.at(idx)]
 # ---------------------------------
 special = 'accepts negative idx'
 return = 'char at idx || undefined'
 
-SP.charCodeAt(idx)
+[SP.charCodeAt(idx)]
 # ---------------------------------
 return = 'utf-16 code pt || NaN'
 
-SP.codePointAt(idx)
+[SP.codePointAt(idx)]
 # ---------------------------------
 return = "utf-16 code pt || undefined"
 
-MULTIPLE CHAR ACCESS
+[MULTIPLE CHAR ACCESS]
 # ==================================
 params = '(idxStart = 0, [idxEnd = str.length])'
 coercion = 'arg -> int'
 gotcha = 'idxStart > str.length || idxEnd > idxStart => empty str'
 
-SP.slice(idxStart = 0, idxEnd = str.length])
+[SP.slice(idxStart = 0, idxEnd = str.length])]
 # ---------------------------------
 special = 'can accept negative indices'
 
-SP.substring(idxStart = 0, idxEnd = str.length])
+[SP.substring(idxStart = 0, idxEnd = str.length])]
 # ---------------------------------
 gotcha = 'idxEnd > idxStart => they are swapped'
 ```
@@ -362,32 +356,31 @@ gotcha = 'idxEnd > idxStart => they are swapped'
 
 ### Elongation
 ```toml
-SP.padStart(targetLength, [padString = ' '])
-SP.padEnd(targetLength, [padString = ' '])
+[SP.pad(Start/End)(targetLength, [padString = ' '])]
 # ==================================
 return = 'str of targetLength with padString added to start/end'
 gotcha = 'if targetLength < str.length => og str'
 
-SP.concat(...str)
+[SP.concat(...str)]
 # ==================================
 coercion = 'args -> str'
 return = 'concatenated str'
 
-SP.repeat(count)
+[SP.repeat(count)]
 # ==================================
 return = 'str repeated count times'
 errors = 'RangeError, if negative or maximum string length (Infinity)'
 ```
 ### Trim
 ```toml
-SP.trim(), SP.trimStart(), SP.trimEnd()
+[SP.trim(), SP.trimStart(), SP.trimEnd()]
 # ==================================
 return = 'str stripped of whitespace or line terminators (/n,/r,/t)'
 ```
 
 ### Substitution
 ```toml
-SP.replace(pattern, replacement), SP.replaceAll()
+[SP.replace(pattern, replacement), SP.replaceAll()]
 # ==================================
 par-pattern = 'str or regex'
 par-replacement = 'str or fn'
@@ -395,14 +388,14 @@ return = 'new str with 1st pattern replaced'
 gotcha = 'use g flag to replace all patterns'
 errors = 'TypeError if replaceAll is missing g flag'
 
-SP.toLowerCase(), SP.toUpperCase()
+[SP.toLowerCase(), SP.toUpperCase()]
 # ==================================
 return = 'new str with a-z chars (lower|upper)cased'
 ```
 
 ### To Array
 ```toml
-SP.split(sep, [limit])
+[SP.split(sep, [limit])]
 # ==================================
 par-sep = '(str, regex) pattern where split should occur'
 coercion = 'sep -> str'
@@ -411,21 +404,20 @@ return = 'array of elems'
 </details>
 
 ## _ARRAYS_
-
 <details><summary>🐜 Core Methods</summary>
 
 ### Static
 ```toml
-Array.isArray(value)
+[Array.isArray(value)]
 # ==================================
 usage = 'a better typeof'
 return = 'boolean'
 
-Array.of(...elemsN)
+[Array.of(...elemsN)]
 # ==================================
 return = 'new Array instance'
 
-Array.from(arrayLike, [mapFn], [thisArg])
+[Array.from(arrayLike, [mapFn], [thisArg])]
 # ==================================
 par-arrayLike = 'iterable or arrayLike object [map,set,str,nodelist]'
 par-mapFn = 'mapFn(elem, idx)'
@@ -443,25 +435,23 @@ errors = 'setting length to neg num or num > 2^32'
 
 ### Destructive
 ```toml 🎀 USPP FSRS
-AP.unshift(...elems)
-AP.push(...elems)
+[AP.(unshift/push)(...elems)]
 # ==================================
 action = 'Adds ...elems to calling array (start/end)'
 return = 'new length'
 
-AP.shift()
-AP.pop()
+[AP.(shift|pop)()]
 # ==================================
 action = "Removes last elem"
 return = "removed elem || undefined for empty array"
 
-AP.fill(value, [start = 0], [end = arr.length])
+[AP.fill(value, [start = 0], [end = arr.length])]
 # ==================================
 action = 'fills range of array with param value'
 coercion = 'start/end -> int'
 return = 'modified array'
 
-AP.splice(start = 0, [deleteCount = arr.length], [...itemsN])
+[AP.splice(start = 0, [deleteCount = arr.length], [...itemsN])]
 # ==================================
 par-deleteCount = 'elems to delete from start'
 par-itemsN = '...items to add from start'
@@ -469,11 +459,11 @@ special = 'start can accept neg indices'
 return = 'arr containing deleted elems [] (no elem removed)'
 coercion = 'start/deleteCount -> int'
 
-AP.reverse()
+[AP.reverse()]
 # ==================================
 return = 'arr with elems reversed'
 
-AP.sort([compareFn(a,b)])
+[AP.sort([compareFn(a,b)])]
 # ==================================
 return = 'default = lexicographical sort || callbackFn return'
 compareFn = 'a = 1st elem, b = next elem'
@@ -487,12 +477,12 @@ b-a = 'descending order'
 
 ### Non-Destructive
 ```toml JF I LISA (Jimmy Fallon I Lisa)
-AP.join(glue = ',')
+[AP.join(glue = ',')]
 # ==================================
 return = 'string separated by glue'
 gotcha = 'nullish elems converted to empty str'
 
-AP.flat([depth = 0])
+[AP.flat([depth = 0])]
 # ==================================
 par-depth = 'level to be flattened'
 return = 'new array with sub-array elems concatenated to it'
@@ -516,17 +506,16 @@ AP.at(idx)
 > All higher order fns have a `callbackFn(elem, idx, array)` and an optional `[thisArg]` The exception is `reduce` and `reduceRight`. It has an additional param `total/accumulator`. All higher order fns that return an array will return a shallow array. There are no destructive methods in this group.
 
 ```toml 🎀 MR RES 5FFFFF
-ALL
+[ALL]
 # ==================================
 callbackFn(elem,idx,arr) = '1st param'
 thisArg = '2nd param'
 
-AP.map(callback)
+[AP.map(callback)]
 # ==================================
 return = 'new array with each elem transformed from callback'
 
-AP.reduce(reducer(total, elem, idx, arr), [initValue = arr[0]])
-AP.reduceRight(reducer(total, elem, idx, arr), [initValue = [arr[0]])
+[AP.(reduce|reduceRight)(reducer(total, elem, idx, arr), [initValue = arr[0]])]
 # ==================================
 reducer.total = 'value from prev call of reducer'
 reducer.elem = 'current element'
@@ -536,31 +525,30 @@ return = 'value from calling reducer over entire array'
 error = 'TypeError if initValue is empty and [ ] is empty'
 reduceRight = 'starts from the right'
 
-AP.every(callback)
-AP.some(callback)
+[AP.(every|some)(callback)]
 # ==================================
 some = 'false unless callbackFn returns a truthy value for an arr elem'
 every = 'true unless callbackFn returns a falsy value for an arr elem'
 return = 'boolean'
 
-AP.forEach(callback)
+[AP.forEach(callback)]
 # ==================================
 action = 'perform iterative action on every elem'
 return = 'undefined'
 
-AP.find(callback)
+[AP.find(callback)]
 # ==================================
 return = 'returns 1st instance that satisfies testing fn'
 
-AP.findIndex(callback)
+[AP.findIndex(callback)]
 # ==================================
 return = '1st idx of elem that satisfies the testin fn'
 
-AP.filter(callback)
+[AP.filter(callback)]
 # ==================================
 return = 'shallow arr of all instances that passes testing fn'
 
-AP.flatMap(callback)
+[AP.flatMap(callback)]
 # ==================================
 return = 'new arr, each elem flattened by depth of 1, transformed by callback'
 deets = 'same as calling map() followed by flat()'
@@ -573,13 +561,13 @@ deets = 'same as calling map() followed by flat()'
 
 ### Identification
 ```toml
-Object.hasOwn(obj,prop)
+[Object.hasOwn(obj,prop)]
 # ==================================
 action = 'tests if prop exists in obj'
 return = 'boolean'
 # same as OP.hasOwnProperty(prop)
 
-Object.is(val1, val2)
+[Object.is(val1, val2)]
 # ==================================
 deets = 'A better ==='
 return = 'boolean'
@@ -588,13 +576,13 @@ special = 'works with NaN and nullish val'
 
 ### Creation
 ```toml
-Object.create(proto, [propsObj])
+[Object.create(proto, [propsObj])]
 # ==================================
 par-proto = 'proto obj of newly created obj'
 par-propsObj = 'setting higher own properties in new obj'
 special = 'used to set enumerable,writable, configurable settings for props'
 
-Object.assign(target, ...sources)
+[Object.assign(target, ...sources)]
 # ==================================
 par-target = 'new return obj'
 par-sources = 'objs to extract props to add props to target'
@@ -607,38 +595,38 @@ gotcha = 'no dupes in props. Later instances overwrite prev prop'
 
 ### To Array
 ```toml
-Object.keys(obj)
+[Object.keys(obj)]
 # ==================================
 return = 'arr of obj own-enumerable keys'
 
-Object.entries(obj)
+[Object.entries(obj)]
 # ==================================
 return = 'matrix of enumerable [key,value]'
 
-Object.values(obj)
+[Object.values(obj)]
 # ==================================
 return = 'arr of obj own-enumerable values'
 ```
 
 ### Fortify (Seal/Freeze)
 ```toml
-Object.seal(obj)
+[Object.seal(obj)]
 # ==================================
 deets = 'prevents extensions. Cannot add new props. Cannot delete existing props'
 par-obj = 'obj to seal'
 return = 'sealed obj'
 
-Object.isSealed(obj)
+[Object.isSealed(obj)]
 # ==================================
 return = 'boolean'
 
-Object.freeze(obj)
+[Object.freeze(obj)]
 # ==================================
 return = 'frozen obj'
 deets = 'sealed. Existing props not modifiable'
 deets = 'Attempt to add will fail silently or throw TypeError(strict mode)'
 
-Object.isFrozen(obj)
+[Object.isFrozen(obj)]
 # ==================================
 return = 'boolean'
 ```
@@ -648,15 +636,14 @@ return = 'boolean'
 <details><summary>🐜 Numbers </summary>
 
 ```toml
-All
+# Number.isFinite(value)
+# Number.isNaN(value)
+# Number.isFinite(value)
+# Number.isInteger(value)
+# Number.isSafeInteger(value)
+[All]
 # ==================================
 return = 'boolean'
-
-Number.isFinite(value)
-Number.isNaN(value)
-Number.isFinite(value)
-Number.isInteger(value)
-Number.isSafeInteger(value)
 
 [Definitions]
 safeInteger = '(-/+)2^53 range'
@@ -668,18 +655,17 @@ finite = '[^(+/-)Infinity, NaN]'
 <details><summary>🐜 Math Basic</summary>
 
 ```toml
-Math.sqrt(num)
+[Math.sqrt(num)]
 # ==================================
 par-num = 'number >= 0'
 gotcha = 'num < 0 => NaN'
 return = 'sqrt of num || NaN'
 
-Math.random()
+[Math.random()]
 # ==================================
 return = 'random float between [0,1)'
 
-Math.min(...numN)
-Math.max(...numN)
+[Math.(min|max)(...numN)]
 # ==================================
 coercion = 'Number'
 gotcha = 'NaN if any arg is NaN'
@@ -690,17 +676,17 @@ max-gotcha = 'Returns -Infinity if no args'
 
 <details><summary>🐜 Rounding</summary>
 
-```toml
-Math.round(num)
-  Math.floor(num)
-  Math.ceil(num)
+```md
+[Math.round(num)]
+[Math.floor(num)]
+[Math.ceil(num)]
 # ==================================
 return = 'rounded num'
 round = 'IF num > 0.5 => round up ELSE round down'
 ceil = 'Always round up'
 floor = 'Always round down'
 
-Math.abs(num)
+[Math.abs(num)]
 # ==================================
 return = 'pos param num'
 deets = 'works with floats too'
@@ -712,7 +698,7 @@ deets = 'works with floats too'
 <details><summary>🐜 RegExp </summary>
 
 ```toml
-RP.test(str)
+[RP.test(str)]
 # ==================================
 deets = 'checks if str is in regex instance'
 return = 'boolean'
