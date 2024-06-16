@@ -236,9 +236,10 @@ console.trace([objects]
 ## _STRINGS_
 <details><summary>🐜 One-Offs </summary>
 
-> Unicode is the encoding standard that maps a human readable character like `[a,b,1,2]` into a `code point`. A code point is a numerical representation of the character. Unicode uses hexadecimal (base 16) to represent the characters in a format of `U+xxxx`. UTF-8 and UTF-16 are both encoding systems. UTF-8 and UTF-16 are both encoding system that maps the Unicode code point into a binary machine code. The difference between them is that UTF-8 uses 8 bits to map out the code point while UTF-16 uses 16bits. Thus UTF-16 can encode more characters into binary.
+> Unicode is the encoding standard that maps a human readable character like `[a,b,1,2]` into a `code point`. A code point is a numerical representation of the character. Unicode uses hexadecimal (base 16) to represent the characters in a format of `U+xxxx`. UTF-8 and UTF-16 are both encoding systems that map the Unicode code point into a binary machine code. The difference between them is that UTF-8 uses 8 bits to map out the code point while UTF-16 uses 16bits. Thus UTF-16 can encode more characters into binary.
 >
-> Note that both Unicode and UTF-16 both share the code point as a field. Therefore, in sources like MDN, the Unicode code point is sometimes referred to as the UTF-16 code point. These are referring to the same thing. Additionally, even though the code point is encoded in hexadecimal, decimal based numbers (0-9) are more intuitive for humans. For this reason, methods such as `fromCharCode()` expects a decimal number and it gets converted to its hexademical equivalent.
+> Note that both Unicode and UTF-16 both share the code point as a field. Therefore, in sources like MDN, the Unicode code point is sometimes referred to as the UTF-16 code point. Whether it's referred to as the Unicode code point or UTF-16 code point is irrelevant. They are referring to the same entity. Additionally, even though the code point is encoded in hexadecimal, decimal based numbers (0-9) are more intuitive for humans. For this reason, methods such as `fromCharCode()` expects a decimal number and this gets converted to its hexademical equivalent.
+
 >
 > Surrogate Pairs are used for high value code points. Code points are written in the form `U+xxxx`. Some symbols require more than the 4 number slots. Take the number `U+10000`. This isn't valid and therefore needs to be broken down into multiple code points that are chunked into one whole. `U+10000` = `{U+D800, U+DC00}`.
 
