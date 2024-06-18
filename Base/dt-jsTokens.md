@@ -11,3 +11,15 @@
 - Literals
 - Variables/Identifiers
 ```
+
+<!--==================-->
+# 🪲 Deets
+<!--==================-->
+## Valid Characters
+
+
+
+<!--==================-->
+# 📗 References
+<!--==================-->
+- Definitive Guide to JS Ch. 3

@@ -96,7 +96,7 @@ Other Details: Concrete example. Edge Cases where it doesn't behave as expected
 
 <details><summary>🔍 LTR and RTL</summary>
 
-> English is a `LTR` language, meaning it's read left to right. The subject is the focus of a sentence. When parsing code, the subject seems a little mysterious. Is it the `JS Engine` or is it the `Interpreter`. Even if you know the answer, it seems like unnecessary mental overload to specify a detail that seems trivial. When the subject is not known, it makes sense to read `RTL`. The key to knowing what to use is to discern what to focus. Do you focus the action? Do you focus the value? Use this to decide whether to read LTR or RTL.
+> English is a `LTR` language, meaning it's read left to right. The subject is the focus of a sentence. When parsing code, the subject seems a little mysterious. Is it the `JS Engine` or is it the `Interpreter`? Even if you know the answer, it seems like unnecessary mental overload to specify a detail that seems trivial. When the subject is not known, it makes sense to read `RTL`. The key to knowing what to use is to discern what to focus. Do you focus on the action? Do you focus on the value? Use this to decide whether to read LTR or RTL.
 
 > In addition to knowing the direction to read code, another way to think about reading code is in terms of scope. Start from bigger scope to smaller scope as well as reading from top to bottom
 <!--~~~~~~~~~~~~~~~~~~-->
@@ -118,16 +118,16 @@ Properties: Standard Library Properties
 
 <details><summary>🔍 Nested Messiness</summary>
 
-> Think of Inception. How do you refer to the 4 levels of a dream? The most obvious way is to refer to it by the level's distinguishing feature. Hotel level. Snowy Level. You can use a number, but it can be messy to count the level with all the nested delimiters and be too much mental overhead. The first and last levels can be referred to by their relative placement in the bigger whole. The same philosophy can be used with code. The levels on both ends can be called `outer` and `inner` and even `middle`. Using these relative words reduces mental overhead and communicates to the audience in a way that is easy to understand.
+> Think of Inception. How do you refer to the 4 levels of a dream? The most obvious way is to refer to it by the level's distinguishing feature. Hotel level. Snowy Level. You can use a number, but it can be messy to count the level with all the nested symbols `{}, []` and this can prove be mentally taxing. A simple fix? Use relative placement such as `first, last, middle`.Using these relative words reduces mental overhead and communicates to the audience in a way that is easy to understand.
 
-If a nested layer is named, you can refer to the layer by its name. In Inception, you say `limbo` and it's clear that you're referring to level 4. Likewise, use similar techniques to refer to the correct nested level. Generally speaking, if you over nesting, there is probably a chance that the code could be optimized and refactored. There is most likely some logic that can be abstracted out.
+If a nested layer is named, you can refer to the layer by its name. In Inception, you say `limbo` and it's clear that you're referring to level 4. Likewise, use similar techniques to refer to the correct nested level. Generally speaking, if you are overnesting(3+ levels), there is probably a chance that the code could be optimized and refactored.
 </details> <!---------------------->
 
 ## _CODE ALONGS_
 > Code alongs is what I call having someone else along as you code. It's good to remember that there is someone else next to you and include them. Vocalize everything, write and speak to make everything be as CLEAR and easy to understand as possible. It's good to give a preview such as `I expect this to log ___ to the console` before you run the console itself. Generally speaking, this kind of clarity comes from a strong understanding of the logic behind the problem. If the logic behind the problem makes perfect sense, then it's easier to communicate that effectively. Lastly, things aren't going to go as expected. There will be syntactical errors, spelling errors, logical blunders. Anticipate that and don't express any form of negativity during the interview.
 
 ## _FEYNMAN_
-> `Feynman` refers to an excellent physics teacher who taught complex topics in a simple, digestible way. I included this category here because there might be situations where the other player might not grasph a concept from either `code parsing` or `code alongs`. This is where a more in depth `feynman` technique might come into play. All of this is playing with semantics, however. The other two modes focus on actual examples to teach a concept. When the other person doesn't understand, you can bring analogies, associations (that the audience might know) to leverage their prior knowledge or other, more targeted examples.
+> `Feynman` refers to an excellent physics teacher who taught complex topics in a simple, digestible way. I included this category here because there might be situations where the other person might not grasph a concept from either `code parsing` or `code alongs`. This is where a more in depth `feynman` technique might come into play. All of this is playing with semantics, however. The other two modes focus on actual examples to teach a concept. When the other person doesn't understand, you can bring analogies, associations (that the audience might know) to leverage their prior knowledge or other, more targeted examples.
 
 <details><summary>🔍 Whole Part Whole</summary>
 

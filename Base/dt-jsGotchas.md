@@ -1,11 +1,13 @@
+## Operator Precedence
 ```js [Operator Precedence Weird Behavior]
 console.log(1) || console.log(2) && console.log(3) || console.log(4)
 
 // This is the same as:
 console.log(1) || (console.log(2) && console.log(3)) || console.log(4)
 ```
-- Prcedence simply adds grouping together
+- Precedence = Adding `( )` around the operator with the higher precedence
 
+## For Loop Has 2 Scopes?
 ```js [For Loop has its own scope?]
 let x = 'global'
 
@@ -22,7 +24,8 @@ while (x < 3) {
 }
 ```
 - For loop seems to have loop condition scope and iteration scope
-- While loop's incrementer increments local var x and thus loop runs forever
+- Also affects `for in` and `for of`
+- While loop doesn't seem to be affected
 
 
 <!--==================-->

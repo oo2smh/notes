@@ -36,11 +36,12 @@
 <!--==================-->
 ## _STACK FRAME VS EXECUTION CONTEXTS_
 > [!Note]
-> `Stack Frame` vs `Execution Context` are they the same thing? Long story short, I don't know. Either the stack frame is a bigger container that holds the execution context, or they are separate entities that are pushed onto the call stack. For now, I have decided to think of them as 2 separate components. The reason for this being is that whenever I read about `execution context`, it is talking the creation phase and execution phase. However, when I look up stack frame, it is talking about how it holds the return address, function arguments/parameters. The fact that different things are mentioned causes me to think they are different buckets.
+> `Stack Frame` vs `Execution Context` are they the same thing? Long story short, I don't know. Either the stack frame is a bigger container that holds the execution context, or they are separate entities that are pushed onto the call stack. For now, I have decided to think of them as 2 separate components. The reason for this being is that whenever I read about `execution context`, it is talking the creation phase and execution phase. When I look up stack frame however, it is talking about how it holds the return address, function arguments/parameters. The fact that different things are mentioned causes me to think they are different buckets.
 
 ## _TYPES OF EXECUTION CONTEXTS_
 There are 2 types of execution contexts and they are similar except for a few key differences.
 
+```md
 Global Execution Context
 - Creates a `global object` (Window in browser) during the creation phase
   - Global object has additional properties/methods (ie: `Window.console`)
@@ -50,32 +51,38 @@ Global Execution Context
 Function Execution Context
 - The Environment record has an additional `arguments` property
 - Popped off the stack at the end of the function
+```
 
 ## _PHASES_
 > [!Caution]
-> There are nouns that refer to a period of time(day, hour, week, month). In JS, there are certain terms that refer to a period of time. `Creation Phase` and `Execution Phase` are obvious in that they refer to the span of time when a specific type of action is being performed.`TDZ` is a little harder to dissect. Some people say it is a concrete block of inaccessible data. Others say it is a specific period where variables declared with `let/const` existed but cannot be accessed. To me the latter definition makes sense. `TDZ` is a period of time when `let/const` variables exist, but cannot be accessed. So I will approach `TDZ` as such (as a period of time)
+> There are nouns that refer to a period of time(day, hour, week, month). In JS, there are certain terms that refer to a period of time. `Creation Phase` and `Execution Phase` are obvious in that they refer to the span of time when a specific type of action is being performed.`TDZ` is a little harder to dissect. Some people say it is a concrete block of inaccessible data that physically exists. Others say it is a specific period where variables declared with `let/const` exists, but cannot be accessed. To me the latter definition makes sense. `TDZ` is a period of time when `let/const` variables exist, but cannot be accessed. So I will approach `TDZ` as such (as a period of time)
 
 <details><summary>🐝 Creation Phase</summary>
 
-> This is the first part of the execution context. Memory allocation is created for local variables. JS sets up the structure for scope chain through the outer lexical env reference. The function itself and its outer lexical environment are bundled and form a `closure`. This `closure` is used whenever there needs to be variable resolution. This closure lives in the heap.
-- Execution context is pushed onto the call stack (This *creates the fn* in the perspective of the js engine)
-- Memory Allocation: Stored in Env Record
+> This is the 1st part of the execution context. Memory allocation is created for local variables. JS sets up the structure for scope chain through the outer lexical env reference. The function itself and its outer lexical environment are bundled and form a `closure`. This `closure` is used whenever there needs to be variable resolution. This closure lives in the heap.
+
+```md
+* Execution context is pushed onto the call stack (This *creates the fn* in the perspective of the js engine)
+* Memory Allocation: Stored in Env Record
   - Hoisting: Moved to the top
     - `Var` declared variables are hoisted and initialized to `undefined`
     - Fn declarations are hoisted in their entirety
   - `Let/const` variables are declared but not initialized to any value. They remain in a state called `TDZ` until the execution phase.
     - Under the hood, using bytecode, variables with `let/const` are assigned to the value of `TheHole` which refers to an absence of value.
-- Closures are created
+* Closures are created
   - Outer Environment Record points to parent fn's reference
   - `Closure`: combination of a fn bundled together with references to its lexical env. Practically speaking, this means fns retain variables from parent scope even after parent fn has finished executing.
-    - Closure is essentially the fn reference (identifier), environment record, and its outer lexical environment.
+    - Closure is essentially environment record and its outer lexical environment that is given a name (fn identifier)
+```
 
-> Closure is a concrete noun. It exists in reality. It is not a noun describing an abstract concept like love or peace. Often times, people will define closures by its effects. For instance, they might say closure is the ability of an inner function to remember its parent function even after the parent function has executed. This is true. This is more aptly described as one capability of a closure. It describes what a closure does. It does not define what a closure is.
+> Closure is a concrete noun. It exists in reality. It is not a noun describing an abstract concept like love or peace. Closure is a combination of a function with its outer lexical environment.
+>
+> Often times, people will define closures by its effects. For instance, they might say closure is the ability of an inner function to remember its parent function even after the parent function has executed. This is true. > This is more aptly described as one capability of a closure. It describes what a closure does. It does not define what a closure is.
 </details>
 
 <details><summary>🐝 Execution Phase</summary>
 
-> During the execution phase, the interpreter goes line by line and executes code. Whenever there is a `=` operator the variable is updated. If no value is given, the variable is initialized to `undefined`. Statements are executed. Further function calls are pushed to the call stack.
+> During the execution phase, the interpreter goes line by line and executes code. Whenever there is a `=` operator the affected variable is assigned a value. If no value is given, the variable is initialized to `undefined`. Statements are executed. Further function calls are pushed to the call stack.
 
 > The closure lives in the heap. But if it persists unnecessarily, it consumes memory. There has to be a better way. JS garbage collection can detect closures that aren't used and then `mark and sweep` them. Generally speaking, if a function doesn't have any inner functions, the closure does not need to persist. It can be garbage collected when a function is finished running. If however, an inner function exists, the closure should remain within the heap because it might be of use in the future. Note that closures only pertain to functions. It does not pertain to other block scopes.
 

@@ -28,19 +28,19 @@ Other: Don't fit into the other buckets
 ```
 ```md
 # Context Setters
-- `/`, `()`, `[]`
+- `/, (), []`
 
 # Anchors
-- `^`, `$`
+- `^, $`
 
 # Quantifiers
-- `{}`, `*`, `+`, `?`
+- `{}, *, +, ?`
 
 # Char Classs
-- `^`, `-`
+- `^, -`
 
 # Other
-- `.`, `\`, `|`
+- `., \, |`
 ```
 
 ## _MODIFIERS_
@@ -89,7 +89,7 @@ negLookbehind.test(name) // true
 ```
 
 ## _CAPTURING GROUPS_
-> What's a capturing group(CG)? It's a group that is saved and can be referenced later on. By default, with any regex, it is saved to the CG0. For example, the regex `/willy/` will capture the 1st instance of 'willy' and slot that into CG0. You can also explicitly add capturing groups. Whenever you use the `()` metacharacter, you are creating a CG. `/(wi)(lly)/` has 3 capturing groups. Everything between `/ /` is CG0, the match `(wi)` is CG1 and `(lly)` is saved to CG2. You can reference these captured groups to find/replace using `$`. $1 refers to capturing group 1. You can also use capturing groups within the regex itself using `\`. `\0` refers to CG0 within the regex. When the CG is used within the regex, it is referred to as a `backreference`.
+> What's a capturing group(CG)? It's a group that is saved and can be referenced later on and is created whenever you use the grouping context setter `( )`. By default, with any regex, it is saved to the CG0. For example, the regex `/willy/` will capture the 1st instance of 'willy' and slot that into CG0. You can also explicitly add capturing groups. `/(wi)(lly)/` has 3 capturing groups. Everything between `/ /` is CG0, the match `(wi)` is CG1 and `(lly)` is saved to CG2. You can reference these captured groups to find/replace using `$`. $1 refers to capturing group 1. You can also use capturing groups within the regex itself using `\`. `\0` refers to CG0 within the regex. When the CG is used within the regex, it is referred to as a `backreference`.
 
 <!--==================-->
 # 📗 References

@@ -17,11 +17,14 @@
 <!--==================-->
 # 🔮 Syntax
 <!--==================-->
+> [!Important]
+> [Visual Figjam representation](https://www.figma.com/board/OCKKQ9Z2JDiNW1aQWUTeHd/js-standardLibrary?node-id=0-1&t=E1rzdR5aLwOMXgYK-1)
+
 > [!Note]
 > To make things more concise, I will omit writing out the first part of instance methods/properties. For instance, `String.prototype.at()` will be written as `SP.at()`. This applies only to instance methods/properties. For static methods, I will write out the full name. `Object.keys()` will be written instead of the abbreviated `O.keys()`. This is in order to be able to visually distinguish between static and instance methods.
 
 ## _CONSTRUCTORS_
-> `Value` parameter can be any datatype. Constructors yank the value and return a new value of their own datatype. `Symbol(value)` will for instance, take the value and return a new symbol. Generally, this is the extent of the functionality of constructors. It is more of than not better to use the literal ways to create values (`{}` to create obj, `[]` to create arrays, `''` for strings, etc). This is more concise and cleaner. However, it is good to be aware that constructors exist.
+> `Value` parameter can be any datatype. Constructors yank the value and return a new value of their own datatype. `Symbol(value)` will for instance, take the value and return a new symbol. Generally, this is the extent of of a constructor's functionality. It is more often than not better to use the literal ways to create values (`{}` to create obj, `[]` to create arrays, `''` for strings, etc). This is more concise and cleaner. However, it is good to be aware that constructors exist.
 
 ```js
 Symbol(value)  // ⏎ symbol
@@ -147,7 +150,7 @@ const AP = Array.prototype
 👺 AP.push(...elemsN)
 👺 AP.pop()
 👺 AP.fill(value, [start = 0], [end = arr.length])
-👺 AP.splice(start, [deleteCout = 0], [...items])
+👺 AP.splice(start, [deleteCount = 0], [...items])
 👺 AP.reverse()
 👺 AP.sort(compareFn(a,b))
 
@@ -234,9 +237,23 @@ console.trace([objects]
 # 🪲 Deets
 <!--==================-->
 ## _STRINGS_
+> [!Note]
+> Strings are array-like and therefore share many similarities to arrays. In particular, they share some of the search and access methods.
+```md
+🎀 LILI AS
+* bracket notation []
+- length
+- includes()
+- lastIndexOf()
+- indexOf()
+
+- at()
+- slice()
+```
+
 <details><summary>🐜 One-Offs </summary>
 
-> Unicode is the encoding standard that maps a human readable character like `[a,b,1,2]` into a `code point`. A code point is a numerical representation of the character. Unicode uses hexadecimal (base 16) to represent the characters in a format of `U+xxxx`. UTF-8 and UTF-16 are both encoding systems that map the Unicode code point into a binary machine code. The difference between them is that UTF-8 uses 8 bits to map out the code point while UTF-16 uses 16bits. Thus UTF-16 can encode more characters into binary.
+> Unicode is the encoding standard that maps a human readable character like `[a,b,1,2]` into a `code point`. A code point is a numerical representation of the character. Unicode uses hexadecimal (base 16) to represent the characters in a format of `U+xxxx`. UTF-8 and UTF-16 are both encoding systems that map the Unicode code point into binary machine code. The difference between them is that UTF-8 uses 8 bits to map out the code point while UTF-16 uses 16bits. Thus UTF-16 can encode more characters into binary.
 >
 > Note that both Unicode and UTF-16 both share the code point as a field. Therefore, in sources like MDN, the Unicode code point is sometimes referred to as the UTF-16 code point. Whether it's referred to as the Unicode code point or UTF-16 code point is irrelevant. They are referring to the same entity. Additionally, even though the code point is encoded in hexadecimal, decimal based numbers (0-9) are more intuitive for humans. For this reason, methods such as `fromCharCode()` expects a decimal number and this gets converted to its hexademical equivalent.
 
@@ -268,7 +285,7 @@ gotchas = 'surrogate pairs count as length of 2'
 
 ```md
 # SP.startsWith(searchStr = 'undefined', [pos = 0])
-# SP.endsWith(searchStr = 'undefined', [pos = str.length])
+# SP.endsWith(searchStr = 'undefined', [pos = 0])
 # SP.includes(searchStr = 'undefined', [pos = 0])
 <!--==================-->
 - par-searchStr = 'Any non-regex valid value'
@@ -309,6 +326,10 @@ gotchas = 'surrogate pairs count as length of 2'
 <details><summary>🐜 Access Methods</summary>
 
 > There are many methods that do similar things with slight variances. It's good to be aware that these methods exist because other people might use a different method. However, for personal usage, I will default to my preferred way of doing things. For instance, for single character access, I will use `[]` for the most part or `at()` if I want to use negative indices. I will use `codePointAt()` over `charCodeAt()`. Lastly, `slice()` takes precedence over `substring()` because it can accept negative indices and thus makes it more flexible.
+
+> When it comes to string access methods, there are 2 flavors: Single char access or multiple character access. Single character access methods all expect an idx integer. If a non-integer value is used as an argument, it will be coerced into an integer. If the converted integer is not a valid idx, the method will fail silently. `at()` and `codePointAt()` will fail silently with the return value of `undefined`. `charAt()` will fail silently with an empty string. Lastly, `charCodeAt()` will fail with `NaN`.As far as I know, single character access methods all fail silently. The other difference is that `at()` supports negative indicies, whereas the other methods do not accept negative numbers. If you do use negative numbers, it will be changed to 0.
+>
+> Bracket notation `[]` can also be used for single char access. Bracket notation does not support negative indices.
 ```md
 # SINGLE CHAR ACCESS
 <!--==================-->

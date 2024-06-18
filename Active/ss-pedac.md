@@ -29,6 +29,7 @@
 
 <details> <summary>🐝 General Lookouts</summary>
 
+```md
 - Lower/Upper Bounds of Values
   * `Domain`: Possible input values
   * `Range`: Possible output values
@@ -39,9 +40,11 @@
 - Term Definitions
   - Examples: word, palindrome,adjacent, consecutive, etc
 </details> <!---------------------->
+```
 
 <details> <summary>🐝 Strings</summary>
 
+```md
 - Empty String
 - Case Sensitivity
 - Valid Values
@@ -51,9 +54,10 @@
 - Punctuation (.?!,;)
 - Special characters (#$%)
 </details> <!---------------------->
-
+```
 <details> <summary>🐝 Numbers</summary>
 
+```md
 - Integer or Float?
 - +/- 0
 - Negative numbers
@@ -62,10 +66,12 @@
 - If the answer is a float, should the output be rounded to the tenth place? Hundreth?_
   - Float rounding error. There can't be a perfect representation of certain decimal based numbers using binary
 </details> <!---------------------->
-
+```
 <details> <summary>🐝 Objects</summary>
 
-- Return same input object ref or new obj ref?
+```md
+- Return the same input object || new obj ref?
+```
 </details>
 
 ## _DATA_
@@ -74,7 +80,6 @@
 > Data structures are a bigger topic in computer science. I don't want to go too much into detail at this stage, but learned a little bit out of scope to better understand this section. Specifically, I learned about `ADT` and `Data structures.`
 
 Look at the output. If it's a data structure, you know that you will need that data structure a a certain point. Ask yourself, what data structure will help you reach the output. Is sequence important? Use an array. Is it better approached from a key-value pair approach? Use a hash map.
-
 
 <details> <summary>🐜 ADT vs Data Structures</summary>
 
@@ -92,7 +97,6 @@ Look at the output. If it's a data structure, you know that you will need that d
 2. Programming Speak (Language agnostic)
 3. Language implementation (Language specific syntax & quirks)
 </details> <!---------------------->
-
 
 <details><summary>🐝 Buzzwords</summary>
 
@@ -123,18 +127,22 @@ Looping: forEach, for..in, for..of
 
 <details><summary>🐝 Problem Solving Approach</summary>
 
-> Start off with the brute-force approach if you don't see any patterns. Decompose into smaller steps and try to find any subprocesses.
+```md
+> Start off with the brute-force approach if you don't see any patterns, decompose into smaller steps and try to find any subprocesses.
 - Pattern Finding
 - Categorize the problem from your mental library
 - Simplify the problem & solution
 - Mix & Match algorithms to try to find a solution
+```
 </details> <!---------------------->
 
 <details><summary>🐜 General Patterns</summary>
 
+```md
 1. Brute Force
 2. Decomposition: Divide and Conquer, Dynamic Programming, Branch and Bound
 3. Approximation: Greedy, Heuristic Approximation
+```
 </details> <!---------------------->
 
 <details><summary>🦋 Formatting Pseudocode</summary>
@@ -176,7 +184,7 @@ v:(name): variable(varName)
 # 🎪 CIRCUS
 <!--==================-->
 ## _ADT AND DATA STRUCTURE TO BUILDINGS_
-> To give an analogy, I like to think of ADTs as a blueprint for a building. The architect thinks about what the building should be: the entryways the exits, etc. However, the building itself is not built. *Data Structures* are the implementation of the concept which is the actual building in reality. Lastly, even with the blueprint, there might be liberties taken by the construction company. That's likened to the language implementation of each data structure.
+> To give an analogy, I like to think of ADTs as a blueprint for a building. The architect thinks about what the building should be: the entryways the exits, etc. However, the building itself is not built. This is similar to ADTS. ADTS provide a conceptual basis for what data structures should be without implementing it. *Data Structures*, on the other hand, are the implementation of ADTs. It is equivalent to an architect creating a building prototype that adheres to the safety standards and all the key points from the ADTS. Lastly, programming languages are akin to decorations placed after the building is created. Structurally, the Data Structure (building) all follow the same ADTs. However, the decorations (picture frames, paint, etc) differ between programming languages.
 
 <!--==================-->
 # 🧪 EXAMPLE
