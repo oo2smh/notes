@@ -39,8 +39,8 @@
     - If we can assume the data type, can we assume that within that data type, it won't be a weird value such as `0, -0, <0, '', []`?
 - Term Definitions
   - Examples: word, palindrome,adjacent, consecutive, etc
-</details> <!---------------------->
 ```
+</details> <!---------------------->
 
 <details> <summary>🐝 Strings</summary>
 
