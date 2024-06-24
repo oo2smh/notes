@@ -53,8 +53,9 @@
 - Digits (0-9)
 - Punctuation (.?!,;)
 - Special characters (#$%)
-</details> <!---------------------->
 ```
+</details> <!---------------------->
+
 <details> <summary>🐝 Numbers</summary>
 
 ```md
@@ -65,8 +66,9 @@
 - Precision: Rounding
 - If the answer is a float, should the output be rounded to the tenth place? Hundreth?_
   - Float rounding error. There can't be a perfect representation of certain decimal based numbers using binary
-</details> <!---------------------->
 ```
+</details> <!---------------------->
+
 <details> <summary>🐝 Objects</summary>
 
 ```md
