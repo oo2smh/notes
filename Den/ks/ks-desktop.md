@@ -5,36 +5,31 @@
 
 ## _HYPR_
 ```yaml
-<CS-[hjkl]>: Move window focus (left/down/up/right)
-<AS-[hjkl]>: Move window (left/down/up/right)
+<CS-[jk]>: Move window focus (left/right)
+<WA-[hl]>: Move window (left/down/up/right)
 <W-Q>: Close Window
 <WS-[hl]: Resize window (left/right)
 <W-F>: Toggle fullscreen
-
-<CS-[qweas]>: Go to workspace [q=1, w=2, e=3, a=4, s=5]
+<CS-[aswdf]>: Go to workspace [q=1, w=2, e=3, a=4, s=5]
 <AS-[12345]>: Move window to workspace [12345]
 
 # SCRATCHPADS
-<W-Space>: Toggle terminal scratchpad
-<W-0>: Toggle reference scratchpad
+<C-Space>: Toggle terminal scratchpad
+<A-Space>: Toggle reference scratchpad
 
 # SCREENSHOTS
-<WS-3>: Screenshot region and save to clipboard only
-<AS-3>: Screenshot region and save to file
-<WS-2>: Screenshot region and open annotation screen
+<CS-g>: Screenshot region and save to clipboard only
 
 # NEW INSTANCE
 <WA-B>: Open Browser
-<WA-Space>: Open Terminal
+<WA-T>: Open Terminal
 <WA-n>: Oven pavucontrol(sound/noise gui) #n = noise
 
 # MISC
 <CS-X>: Toggle app launcher
-<CS-9>: Toggle clipboard history
+<CS-e>: Toggle clipboard history
 <CS-7>: Toggle hyprshade
-<WA-d>: Close dunst(notification daemon) popup
 ```
-
 ## _TERMINAL_
 These are the default terminal shortcuts regardless of which terminal emulator you chooose to use
 
@@ -61,24 +56,25 @@ I will use zellij with 3 main modes. Normal (default), Lock (to turn off zellij 
 ```yaml
 # GENERAL
 <C-d>: Closes terminal instance/window
-<A-z>: Lock mode
-<A-a>: Normal mode
+<A-x>: Lock mode
+<A-d>: Normal mode
 <A-s>: Scroll mode
 <A-f>: Toggle Float
 
-<A-n>: New pane
+<A-g>: New pane
 <A-t>: New tab
 
-<A-w>: Closes window (<C-d> alternative)
-<A-[hjkl]>: Focus [left/down/up/right]
+<A-q>: Closes window (<C-d> alternative)
+<A-[jk]>: Focus [left/right]
 <A-[1234]>: Go to tab [1234]
-<A-[=-]>: Resize [right/left]
+<A-[hl]>: Resize [right/left]
 
-# SCROLL
-<C-d>: (In Scroll mode) Scroll down 1/2 page
-<C-u>: (In Scroll mode) Scroll up 1/2 page
-<C-e>: (In Scroll mode) Scroll down 1 line
-<C-y>: (In Scroll mode) Scroll up 1 line
+# IN SCROLL MODE
+<C-d>: Scroll down 1/2 page
+<C-u>: Scroll up 1/2 page
+<e>: Edit Editor Scrollback mode
+<C-e>: Scroll down 1 line
+<C-y>: Scroll up 1 line
 
 # SESSION
 <A-o>: Session/Owl mode

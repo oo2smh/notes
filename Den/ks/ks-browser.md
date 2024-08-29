@@ -21,12 +21,6 @@
 <A-left>/<A-right>: Go back/forward in history
 ```
 
-## _EXTENSIONS_
-```yaml
-<C-S-u>: Bitwarden toggle
-A-g>: Toggle Dark mode #goggles
-```
-
 ## _VIMIUM C_
 > [!Note]
 > Vimium provides a lot of features. I am mainly interested in the f/F feature to navigate quickly within a page. As mentioned above, use the browser defaults whenever possible.
@@ -36,9 +30,11 @@ A-g>: Toggle Dark mode #goggles
 (f): Open link in current tab
 (F): Open link in new tab
 (W): Move tab to new window
+(w): Scroll down
+(e): Scroll up
 (H,L): Go back/go forward
 (gg,G): Go to top/bottom
-(h,l): Scroll left and right
+(q,t): Scroll left and right
 (yy): Copy url
 (?): Show shortcuts
 (b): Show bookmarks

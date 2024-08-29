@@ -52,6 +52,7 @@ v: Visual-char mode
 ("): Unnamed register
 (*): System clipbaord
 (+): System Clipboard
+(_): Void register
 ```
 
 ## _CURSOR SHIFTS_
@@ -88,14 +89,16 @@ gM: middle of line with characters
 gm: middle of screen total width if not, goes to end of char
 
 # VERTICAL MOTIONS
+(+): Jump down. Use with count before cmd
+(-): Jump up. Use with count before cmd
 (%): Jump to matching delimiter (cursor must be on delimiter)
 (*): Jump to next cursor match
 (#): Jump to previous cursor match
 (n/<S-n>): jump to next/prev cursor match
-<S-]>: next island gap (island = any text surround by blank line)
-<S-[>: prev island gap
-<S-)>: next sentence or (1st line of island and island end-gap)
-<S-(>: prev sentence or (1st line of island and island end-gap)
+<{>: next (paragraph) island gap (island = any text surround by blank line)
+<}>: prev (paragraph) island gap
+<)>: next sentence or (1st line of island and island end-gap)
+<(>: prev sentence or (1st line of island and island end-gap)
 
 # VERTICAL RELATIVE MOTIONS
 H: High point of visual screen
@@ -103,6 +106,7 @@ M: Mid point of visual screen
 L: Low point of visual screen
 gg: go to 1st line of file
 G: go to last line of file
+(''): moves to previous cursor position
 
 # VERTICAL PRECISE MOVEMENTS
 ('mark): Jump to set mark
@@ -121,7 +125,7 @@ G: go to last line of file
 
 # SEARCH
 /(pattern): Jump to next word
-n/<S-n>: Jump to next/prev highlighted word
+n/N: Jump to next/prev highlighted word
 ```
 
 ## _COMMANDS_
@@ -138,6 +142,11 @@ x: delete a char
 .: repeat cmd
 J: join line
 o/O: Add a following/preceding line
+
+## Niche Commands
+gx: open markdown link
+gp/gP: paste system register
+
 
 # OPERATORS
 # When you double an operator, it affects the line
@@ -221,3 +230,9 @@ H/M/L: High, Mid, Low
 i(C-w, C-h): Insert specific delete shorthands
 Ex cmds: Most ex cmds don't work
 ```
+
+<!--==================-->
+# 📗 Resources
+<!--==================-->
+- [Vim Macros Are Just Registers](https://www.youtube.com/watch?v=bTmEqmtr_6I)
+
