@@ -32,7 +32,7 @@ v: Visual-char mode
 # OBSCURE MODES
 <C-o>: Normal-insert mode
 <S-r>: Replace mode
-<none>: Operator Peding Mode
+<none>: Operator Pending Mode
 <gh>: Select mode
 # in visual block mode <C-c> doesn't work as expected
 ```
@@ -82,6 +82,7 @@ t/T: to next/prev char before search-char in line
 
 # HORIZONTAL RELATIVE MOTIONS
 (0): beginning of line
+(_): beginning of 1st char on line
 ^: first non-space char of line
 $: last char of line
 g_: last non-space char of line
@@ -126,6 +127,9 @@ G: go to last line of file
 # SEARCH
 /(pattern): Jump to next word
 n/N: Jump to next/prev highlighted word
+
+# HISTORICAL JUMPS
+<C-o/i>: Old(Out)/It(In)
 ```
 
 ## _COMMANDS_
@@ -146,7 +150,6 @@ o/O: Add a following/preceding line
 ## Niche Commands
 gx: open markdown link
 gp/gP: paste system register
-
 
 # OPERATORS
 # When you double an operator, it affects the line
@@ -174,11 +177,12 @@ w: word
 s: sentence
 p: paragraph
 t: tag
-B: block
 ('"}): delimiters
 
 # EX
 # all ex commands start with (:)
+<Ctrl r>(register): paste contents of register
+te: open terminal (useful for testing I/O)
 w: write
 q: quit
 q!: quit without saving changes
