@@ -1,11 +1,7 @@
-<!--==================-->
 # tldr;
-<!--==================-->
 - file structure loosely based off the unix default folder/file structure
 
-<!--==================-->
 # Folder Structure
-<!--==================-->
 1. bin
   * big-pic executables
 2. etc
@@ -21,9 +17,7 @@
 
 - optional `zip` folder in bin and lib for archived notes
 
-<!--==================-->
 # Formatting
-<!--==================-->
 ## HEADERS_
 - Header 1 will be separated by a frame
 - Header 2 will be in UPPERCASE

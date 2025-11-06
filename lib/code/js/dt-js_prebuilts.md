@@ -1,6 +1,4 @@
-<!--==================-->
 # Overview
-<!--==================-->
 - Some languages use built-in functions, JS doesn't implement many useful fns
 - Broken down into 2 main categories
   1. Core
@@ -16,9 +14,7 @@ Other built in objects in JS not tied to the datatypes
 - Supplemntary members will be prefixed with S
 - [Math, Regexp, JSON, Set, Date, Error]
 
-<!--==================-->
 # Constructors
-<!--==================-->
 > `Value` parameter can be any datatype. Constructors yank the value and return a new value of their own datatype. `Symbol(value)` will for instance, take the value and return a new symbol. Generally, this is the extent of of a constructor's functionality. It is more often than not better to use the literal ways to create values (`{}` to create obj, `[]` to create arrays, `''` for strings, etc). This is more concise and cleaner. However, it is good to be aware that constructors exist.
 
 ```js .........................
@@ -32,18 +28,14 @@ Array(...elemsN) || Array(arrayLength) // ⏎ array
 Function([...argumentsN], functionBody) //  ⏎ function
 `````````````````````````````````
 
-<!--==================-->
 # Implicit Coercions
-<!--==================-->
 ```js ...............................
 const validDatatypes = [Symbol, Boolean, Number, BigInt, String, Object, Array, Function]
 validDatatypes[#].prototype.valueOf()
 validDatatypes[#].prototype.toString()
 `````````````````````````````````````
 
-<!--==================-->
 # C:Number
-<!--==================-->
 - 🎀 4Is TPTP
   - Glasses wearing mathematical student inside of a tipi inside of a smaller tipi
     - It's cold and he's getting numb. He has fins, parsley and a knife
@@ -107,9 +99,7 @@ Np.toFixed([digits = 0])
 Np.toPrecision([precision = String(num).length])
 ````````````````````````````````````
 
-<!--==================-->
 # C:Object (Dict)
-<!--==================-->
 - 🎀 HHI CA KEV, 3I FPS DaviD GoGGins
   - Looking into a purple snowglobe object
     - Waving to kevjumba while stuttering my H's in CA.
@@ -177,9 +167,7 @@ the return value of the property will be used
 - `set`: fn which serves as the setter for the property or undefined if there
 is no setter.
 
-<!--==================-->
 # C:String
-<!--==================-->
 - 🏺 [One-offs, Access, Search, Manipulation]
 
 ## _ONE_OFFS_
@@ -280,9 +268,8 @@ SP.toLowerCase()
 // SPLIT into Array (Transmutation to array)
 SP.split(separator) // ⏎ array
 ``````````````````````````````````````
-<!--==================-->
+
 # C:Array
-<!--==================-->
 ## _ONE OFFS_
 ```js ...............................
 Array.isArray(value)
@@ -328,9 +315,7 @@ AP.findIndex(callbackFn, [thisArg])
 AP.flatMap(callbackFn, [thisArg])
 ````````````````````````````````````
 
-<!--==================-->
 # S:Math
-<!--==================-->
 - 🎀 SR Military Management Fund CRAp
 
 ```js ..................................
@@ -344,9 +329,7 @@ Math.round(number);
 Math.abs(number);
 `````````````````````````````````````````
 
-<!--==================-->
 # S:Regexp
-<!--==================-->
 - 2 ways to create a regex
   1. Literal notation /regex pattern/
   2. Constructor fn with `new` keyword
@@ -355,9 +338,7 @@ Math.abs(number);
 RP.test(value)
 ``````````````````````````````````
 
-<!--==================-->
 # S:Date
-<!--==================-->
 - 🎀 DM HMS FMD (foot mouth disease)
 
 ```js ..............................
@@ -372,9 +353,7 @@ const dateObj = {
 }
 ````````````````````````````````````
 
-<!--==================-->
 # S:Console
-<!--==================-->
 - output to the user
 - console mgs are shown in diff colors
 
@@ -385,10 +364,7 @@ console.log()
 console.trace([objects])
 ``````````````````````````````````
 
-<!--==================-->
 # S:Error
-<!--==================-->
-
 ```yaml ............................
 SyntaxError: violates syntax rules
   - (punctuation, whitespace, valid characters)
@@ -399,9 +375,7 @@ TypeError: value retrieval/action on the wrong type
    - reassignment to constant variable
 `````````````````````````````````````
 
-<!--==================-->
 # Strawberry (string, arrays)
-<!--==================-->
 - 🎀 LILI AS
 - Strings & Arrays have many similarities to strings
 - I grouped both as being in the strawberry group, however, it can also be grouped into a `sequence` group
@@ -417,17 +391,13 @@ TypeError: value retrieval/action on the wrong type
 - slice()
 ````````````````````````````````````
 
-<!--==================-->
 # Encoding (char to bytes)
-<!--==================-->
 - Encoding standard (dict): Unicode. Yellow Pg dict
 - Encoding system: `UTF-8, UTF-16`. Implementation of Encoding standard
 - Surrogate pairs: high value code pts (requires multiple code pts) and hunked into 1 whole `U+100000` = `{U+D800, U+DC00}`
 - Code Pt is present in both the encoding standard & system
 
-<!--==================-->
 # Array Concepts
-<!--==================-->
 ## _MUTATE THE CALLER_
 > Some array instance methods directly mutate the caller. These methods are called *destructive*. On the list above, those methods with 👺 are destructive methods. Some destructive methods have a non-destructive counterpart. Unfortunately, browser support (at the time of writing) is not supported everywhere.
 
@@ -469,9 +439,7 @@ originalArray[2].a = 'updated value';
 console.log({originalArray, copyArray});
 `````````````````````````````````````````````
 
-<!--==================-->
 # Examples
-<!--==================-->
 ## _NUMBER_
   ### Parsing Methods
 ```js ..................................
@@ -494,9 +462,7 @@ num.toFixed(5) // 23.00100
 num.toPrecision(1) // 2
 ````````````````````````````````````````
 
-<!--==================-->
 # References
-<!--==================-->
 > [!Important]
 > [Visual Figjam representation](https://www.figma.com/board/OCKKQ9Z2JDiNW1aQWUTeHd/js-standardLibrary?node-id=0-1&t=E1rzdR5aLwOMXgYK-1)
 

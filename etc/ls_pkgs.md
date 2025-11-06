@@ -1,6 +1,4 @@
-<!--==================-->
-# Dotfiles
-<!--==================-->
+# DOTFILES
 - rofi
 - nvim
 - hypr
@@ -9,9 +7,7 @@
 - .bashrc
 - qmk
 
-<!--==================-->
-# Packages
-<!--==================-->
+# PACKAGES
 ## 🧱 System / Boot / Kernel / Drivers
 - base-devel	Essential dev tools
 - amd-ucode	AMD CPU microcode updates

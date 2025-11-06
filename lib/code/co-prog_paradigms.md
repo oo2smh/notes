@@ -1,6 +1,4 @@
-<!--==================-->
 # Paradigms
-<!--==================-->
 - **Paradigms**: A way of approaching code. Introduction of constraints in larger codebases to decrease bugs and headache.
 ## _UNIVERSAL_
 - Abstraction
@@ -21,10 +19,9 @@
     - No loops! Loops have a pointer that changes per iteration
     - Recursion instead!
   - Pipeline and method chaining
-3. Imperative
+
+## _IMPERATIVE_
   - Issue commands explicitly for each step along the way
 
-<!--==================-->
 # References
-<!--==================-->
 - [Functional is a Sub-declarative paradigm](https://stackoverflow.com/questions/10925689/functional-programming-vs-declarative-programming-vs-imperative-programming)

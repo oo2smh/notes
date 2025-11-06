@@ -1,6 +1,4 @@
-<!--==================-->
 # 🐧 tldr
-<!--==================-->
 - **WHAT**: interface to use the _shell_. Shell is used to issue cmds to OS
   - file and folder management
   - process management
@@ -8,9 +6,7 @@
 - **WHY**: GUIs exist, but text-based interfaces (ie: terminal) are faster and more powerful
 - **HOW**: Shell is a program like any other. It lives in `/usr/bin/bash`
 
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ## _BACKBONE_
 - Background Info
 - Language Basics
@@ -101,9 +97,7 @@
 - users
   - root, group, others
 
-<!--==================-->
 # 👊🏻 Syntax
-<!--==================-->
 ## _RESOURCES MANAGEMENT_
 - ps
   - kill

@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ```md
 - Call stack
 - Stack Frame
@@ -19,9 +17,8 @@
 - Scope Chain
 - Variable Resolution
 ```
-<!--==================-->
+
 # 🪢 Cxns
-<!--==================-->
 ```md
 - Stack Frame, Execution Cxt
 - Closures, Environment Records, Outer Lexical Env Reference
@@ -31,9 +28,7 @@
 - Temporal Dead Zone, Creation Phase, Execution Phase
 ```
 
-<!--==================-->
 # 🪲 Deets
-<!--==================-->
 ## _STACK FRAME VS EXECUTION CONTEXTS_
 > [!Note]
 > `Stack Frame` vs `Execution Context` are they the same thing? Long story short, I don't know. Either the stack frame is a bigger container that holds the execution context, or they are separate entities that are pushed onto the call stack. For now, I have decided to think of them as 2 separate components. The reason for this being is that whenever I read about `execution context`, it is talking the creation phase and execution phase. When I look up stack frame however, it is talking about how it holds the return address, function arguments/parameters. The fact that different things are mentioned causes me to think they are different buckets.
@@ -94,9 +89,7 @@ When variables do not exist in the current scope, the JS engine can traverse thr
 ## _ERROR MANAGEMENT_
 `TypeError` or `ReferenceError` might be thrown in the call stack. Generally speaking, `SyntaxError` occurs during the parsing step when the `AST` is created. When an error is thrown a `stack trace` is also provided to the user. Simply put, the stack trace will output the line/character where the error is first encountered. It will also throw a report of the active stack frames on the call stack when the error was encountered.
 
-<!--==================-->
 # 🧪 Examples
-<!--==================-->
 ```js
 let x = 10;
 const y = 20;
@@ -198,9 +191,7 @@ const globalExecContext = {
 callStack.push(stackFrame, fnExecContext);
 ```
 
-<!--==================-->
 # 📗 References
-<!--==================-->
 - [How JS Handles Let/Const Under The Hood in Bytecode](https://www.youtube.com/watch?v=MZYDzfxyxic)
 - [Why is there a TDZ?](https://2ality.com/2015/10/why-tdz.html)
 - [Closures MDS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)

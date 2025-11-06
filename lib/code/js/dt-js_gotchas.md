@@ -28,7 +28,5 @@ while (x < 3) {
 - While loop doesn't seem to be affected
 
 
-<!--==================-->
 # 📗 References
-<!--==================-->
 - [Operator Precedence Changes Grouping](https://stackoverflow.com/questions/46506098/why-does-short-circuit-evaluation-work-when-operator-precedence-says-it-shouldn/46506130#46506130)

@@ -1,6 +1,4 @@
-<!--==================-->
 # Overview
-<!--==================-->
 - Every value in Python = object. Each value has a data-type(type) which has an associated class.
 - All types are (direct/indirect) subtypes of object. They inheirt the default behavior from object.
 
@@ -64,15 +62,11 @@ Objects are python's abstraction of data. All data has 3 things
     2. Indexing
     3. Slicing []
 
-<!--==================-->
 # Functions
-<!--==================-->
 ## Decorators
 - A special type of fn
 - they are functions which modify the functionality of other functions. They help to make our code shorter and more Pythonic. M
 
-<!--==================-->
 # Reference
-<!--==================-->
 - [What are Decorators](https://book.pythontips.com/en/latest/decorators.html)
 - [Function Decorators](https://stackoverflow.com/questions/739654/how-do-i-make-function-decorators-and-chain-them-together/1594484#1594484)

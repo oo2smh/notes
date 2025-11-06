@@ -1,15 +1,11 @@
-<!--==================-->
 # Overview
-<!--==================-->
 - Python uses the builtin fns extensively
 - Prebuilts are common actions on datatypes
   - It can be implemented through operators, builtins, and methods
   1. CORE
   2. SUPPLEMENTARY
 
-<!--==================-->
 # Built In Fns
-<!--==================-->
 - Python's built-in fns
   - implements the `Math`, `Array` and `Type Converter` fns from JS
   - other math functionalities are in the math module
@@ -139,9 +135,7 @@ breakpoint()
 help()
 ``````````````````````````````
 
-<!--==================-->
 # C:Number
-<!--==================-->
 ## _BOOLEAN CHECK_
 ```py .......................
 int.is_integer()
@@ -159,9 +153,7 @@ fixedValue = f"{num: .2f}" # use str formatting
 preciseValue = f"{number: .3g}"
 ````````````````````````````
 
-<!--==================-->
 # C:Dictionaries
-<!--==================-->
 - Basic Actions: Create, Remove, Copy, Add, Access
 ```py ...........................
 # BOOLEAN CHECK
@@ -181,9 +173,8 @@ dict.items()
 dict.keys()
 dict.values()
 ````````````````````````````````
-<!--==================-->
+
 # Sequences
-<!--==================-->
 - These are the common actions for sequences
   - Sequences like strings, tuples, lists, ranges
 - Sequences (strings, lists) deserve a more in-depth section
@@ -206,9 +197,7 @@ min(s)
 max(s)
 ````````````````````````````````
 
-<!--==================-->
 # C:String
-<!--==================-->
 ## _SEARCH_
 ```py ......................
 str.startswith()
@@ -278,9 +267,7 @@ str.isalnum()
       str.isdecimal()
 ````````````````````````````
 
-<!--==================-->
 # Lists
-<!--==================-->
 ## _BASE ACTIONS_
 ```py .....................
 ls = [1, 2, 3]
@@ -311,9 +298,7 @@ import functools
 reduce()
 ```````````````````````````````
 
-<!--==================-->
 # Regexp
-<!--==================-->
 - `re` module
 - regexp patttern `r"pattern"`
   - stands for raw strings, but I think of it as strings, but I think of it as regex
@@ -331,9 +316,7 @@ re.sub(pattern, replace, string)
 re.split(pattern, string)
 ``````````````````````````````
 
-<!--==================-->
 # Exceptions
-<!--==================-->
 - Everything is a subclass of BaseException
   - Exception is a subclass of BaseException
 
@@ -349,8 +332,7 @@ BaseException
       - ZeroDivisionError
     - RunttimeError
 ````````````````````````````````
-<!--==================-->
+
 # Date/Time
-<!--==================-->
 - import `datetime` module
 - contains several classes `date, time, datetime, timedelta`

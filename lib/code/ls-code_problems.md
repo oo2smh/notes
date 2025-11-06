@@ -1,9 +1,6 @@
-<!--==================-->
 # Categorization
-<!--==================-->
 ## _MATRIX_
 - [CW:Find the Mine](https://www.codewars.com/kata/528d9adf0e03778b9e00067e/train/javascript)
-
 ## _BEST MATCH_
 - best match key words: superlative words (greatest, lowest, smallest, etc)
 
@@ -63,9 +60,7 @@
 ## _CASES_
 - [CW:Format a String of names like Bart, Lisa & Maggie](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/javascript)
 
-<!--==================-->
 # Techniques
-<!--==================-->
 ## _FRAMING STRUCTURE_
 ### Hash Table
 - [LS:Odd Fellow](https://github.com/oo2smh/Launch_School/blob/main/exercises/js_110/extra/19.js)
@@ -157,8 +152,6 @@
 - [CW:Where's My Parent](https://www.codewars.com/kata/58539230879867a8cd00011c/train/javascript )
 - [CW:Reverse or rotate](https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/javascript)
 
-<!--==================-->
 # Formulas
-<!--==================-->
 ## HASH ORDER
 - [CW:Anagram Detection]

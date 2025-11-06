@@ -1,6 +1,4 @@
-<!--==================-->
 # 👊🏻 Syntax
-<!--==================-->
 ## _SELECTION_
 - Projection: vertical selection
 - Selection: horizontal selection

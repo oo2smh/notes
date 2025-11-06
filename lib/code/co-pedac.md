@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ```md
 * PEDAC
   - PPP
@@ -14,9 +12,8 @@
   - Buzzwords
   - Abstraction Levels
 ```
-<!--==================-->
+
 # 🪲 Deets
-<!--==================-->
 ## _PROBLEM SOLVING MODELS_
 > Launch School introduces a mental framework to systemize problem solving. It uses PEDAC an acronym for problem-solving. ABC and PPP are my personal adaptations to the PEDAC process which creates additional chunks around the PE/DA steps of PEDAC. In the end, they are all the same framework.
 
@@ -182,15 +179,11 @@ v:(name): variable(varName)
   - Keep track of which scope a variable is. Creating subprocesses and not having global variables can at times lead to scope confusion.
 - Comment out extra test cases as needed and keep 1 test case.
 
-<!--==================-->
 # 🎪 CIRCUS
-<!--==================-->
 ## _ADT AND DATA STRUCTURE TO BUILDINGS_
 > To give an analogy, I like to think of ADTs as a blueprint for a building. The architect thinks about what the building should be: the entryways the exits, etc. However, the building itself is not built. This is similar to ADTS. ADTS provide a conceptual basis for what data structures should be without implementing it. *Data Structures*, on the other hand, are the implementation of ADTs. It is equivalent to an architect creating a building prototype that adheres to the safety standards and all the key points from the ADTS. Lastly, programming languages are akin to decorations placed after the building is created. Structurally, the Data Structure (building) all follow the same ADTs. However, the decorations (picture frames, paint, etc) differ between programming languages.
 
-<!--==================-->
 # 🧪 EXAMPLE
-<!--==================-->
 ```js
 /* [Start time]
 INPUT: {datatype} varName: additional details about the input

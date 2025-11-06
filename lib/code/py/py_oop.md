@@ -1,6 +1,4 @@
-<!--==================-->
 # Modules are Objects
-<!--==================-->
 > Modules are instances of a module class
 - [Modules are singleton instances of built-in module class](https://stackoverflow.com/questions/43183244/difference-between-module-and-class-in-python)
 
@@ -8,9 +6,7 @@
 
 "There are huge differences between classes and modules in Python.Classes are blueprints that allow you to create instances with attributes and bound functionality. Classes support inheritance, metaclasses, and descriptors.Modules can't do any of this, modules are essentially singleton instances of an internal module class, and all their globals are attributes on the module instance. You can manipulate those attributes as needed (add, remove and update), but take into account that these still form the global namespace for all code defined in that module." -- [stack overflow]
 
-<!--==================-->
 # Built in Variables
-<!--==================-->
 - The dunder vars are baked into the module class
 - built in variables are surrounded by double underscores
   - built in variables can hold data (class info or object)
@@ -20,24 +16,18 @@
     - __init__
     - __del__
 
-<!--==================-->
 # Class Anatomy
-<!--==================-->
 - `__init__` instance constructor
 - `built-in vars` inherited from module class
 - instance vars: state (inside instance method constructor)
 - instance methods: behavior
 - static vars/methods
 
-<!--==================-->
 # Object Scope
-<!--==================-->
 - What attributes (state/behavior) an instance obj has access to
 - Similar to var/identifier scope (which works in a lexical scope cxt)
 
-<!--==================-->
 # Instantiation
-<!--==================-->
 ## _PROCESS_
 - `__new__` static method is called to return an uninitialized object to the constructor
 - constructor initializes obj by calling `__init__`

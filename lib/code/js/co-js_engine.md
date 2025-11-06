@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 >The purpose of this note is to identify and categorize the various players inside of the JS engine. It identifies who these players are and their main role in the runttime environment. Other notes will focus in on the specific departments of this note in much greater detail. Here I attempt ot present a bird's eye view of the JS engine.
 
 ```md
@@ -42,9 +40,8 @@
 - Microtask Queue
 - Task Queue
 ```
-<!--==================-->
+
 # 🪢 Cxns
-<!--==================-->
 ```md
 - Source, Machine code
 - Ignition, Turbofan
@@ -54,9 +51,7 @@
 - Lexical Env, Variable Env
 ```
 
-<!--==================-->
 # 🪲 Deets
-<!--==================-->
 CPUS only understand binary (0,1) and do not understand programming languages such as Javascript. It needs an engine to parse through and convert the source code that programmers write into machine code. In JS, this engine lives within a bigger host environment (browser, server). The engine itself has different flavors for how it is implemented. The different flavors are V8(Chrome), Spidermonkey(Firefox), Chakra(IE). V8 engine is the most common, so I will focus on the V8 JS engine's implementation. The V8 engine does not live in isolation, but lives among other entities that the host environment provides. These include the `JS Standard Library`, `Web APIS`, `Event Loop`, `Task Queue`, and `Microtask Queue`. These extra entities supercharge JS allowing it to perform more actions.
 
 Within the JS engine itself, there are 4 main departments. Within the actual engine it might not be arranged as neatly as I talk about it here, but I find it easier to chunk it into 4 groups. The groups are:
@@ -95,9 +90,7 @@ The heap is a designated area where objects live in Javascript. The only excepti
 
 When an object does not have a property, similar to the `scope chain` (created by the chain of `outer lexical environment` references) the `protoypical chain` is traversed to have `property resolution`. The end object is `null` and if it does not have the property, JS returns undefined. The `prototypical-chain` relies on `prototypical inheritance` which deserves more elaboration in a separate note.
 
-<!--==================-->
 # 📗 References
-<!--==================-->
 - [What is Ignition?](https://stackoverflow.com/questions/54957946/what-does-v8s-ignition-really-do)
 - [3 Parts of JIT Compiler](https://medium.com/@minhaz217/lets-understand-the-javascript-just-in-time-compiler-jit-and-how-the-v8-engine-works-ff6276d131a1#:~:text=The%20interpreter%20in%20the%20V8,inline%20caching%20and%20other%20optimizations%2e)
 - [Big Picture V8 Engine](https://medium.com/@minhaz217/lets-understand-the-javascript-just-in-time-compiler-jit-and-how-the-v8-engine-works-ff6276d131a1#:~:text=The%20interpreter%20in%20the%20V8,inline%20caching%20and%20other%20optimizations%2e)

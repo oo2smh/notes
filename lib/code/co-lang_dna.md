@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ## _BIG PICTURE_
 - Language classification
 - Program Lifecycle
@@ -151,7 +149,7 @@
 - Usually fns that are available in the universe block
 - What is implemented as a universe block
 ```md -------------------------
-# Examples
+### Examples
 - console.log || fmt.Println()
 - len() in python
 - sum() in python
@@ -167,9 +165,8 @@
 5. I/O (files)
 6. Data Serialization (json)
 ```
-<!--==================-->
+
 # Lang Classification
-<!--==================-->
 - Compiled vs Interpreted?
 - Static vs Dynamic Typing
 - Abstraction Levels: Closeness from Machine Code
@@ -242,9 +239,7 @@
   - Functional
   - Procedural
 
-<!--==================-->
 # Program Lifecycle
-<!--==================-->
 - Programs have 2 phases
   1. Compile-time
     - Lexing
@@ -256,9 +251,7 @@
 
 - Closures are created during run-time
 
-<!--==================-->
 # Tokens
-<!--==================-->
 ## _LITERALS_
   ### Primitives
 - Numeric
@@ -365,9 +358,8 @@ main () {
   }
 }
 ```
-<!--==================-->
+
 # Reserved Words
-<!--==================-->
 - words that are used by the language for some special purpose
 - reserved words are barred from being used by identifiers (var names)
 - In JS, reserved words are divided into keywords (words actively being used by the JS lang & non-keywords)
@@ -375,9 +367,7 @@ main () {
   - There are regular reserved words
   - There are soft keywords (words reserved under specific contexts) `match, case, _ , type`
 
-<!--==================-->
 # Operators
-<!--==================-->
 - special symbols/keywords that let you perform actions on values called operands
 - there are some lang-specific operators, but there's usually a set of common operators
 ```md -------------------------
@@ -413,9 +403,7 @@ a
 - Rest and Spread
 ```
 
-<!--==================-->
 # Compound Constructs
-<!--==================-->
 ## _EXPRESSIONS_
 - Operator-based
 - Fn Expressions
@@ -448,9 +436,7 @@ a
   ### Miscellaneous
 - empty, compound statements
 
-<!--==================-->
 # Standard Library
-<!--==================-->
 - Depending on the lang, some fn may be implemented not as a method, but these
 fns should all be there
   - For ex, `length` is implemented
@@ -543,11 +529,7 @@ fns should all be there
 - get current date,time
 - set date/time
 
-
-
-  <!--==================-->
 # Resources
-  <!--==================-->
 - [Python Lexical Analysis](https://docs.python.org/3/reference/lexical_analysis.html#delimiters)
 
 

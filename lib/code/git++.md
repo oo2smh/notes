@@ -1,11 +1,9 @@
-<!--==================-->
 # Commands
-<!--==================-->
 ```md
-# Plumbing
+## Plumbing
 cat-file (-p)
 
-# State Change
+## State Change
 ## Forward
 init
 add (-p)
@@ -16,30 +14,30 @@ reset (--soft, --mixed, --hard)
 revert
 restore
 
-# Info
-status
+## Info
+switchtatus
 log (--oneline, --decorate, --all --pretty)
 show
 diff
 reflog
 tag
 
-# Workspace Shift
+## Workspace Shift
 branch
 switch
 checkout
 worktree
 stash
 
-# Grafting
+## Grafting
 merge
 rebase
 
-# Single-out
+## Single-out
 bisect
 cherry-pick
 
-# Remote
+## Remote
 remote
 push
 fetch

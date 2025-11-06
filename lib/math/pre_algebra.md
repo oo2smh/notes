@@ -1,6 +1,4 @@
-<!--==================-->
 # Number Sets
-<!--==================-->
 - There are `real` & `imaginary` numbers
 - Imaginary numbers are used for specific use cases & can be ignored
 
@@ -48,16 +46,12 @@
 
 ``````````````````````````
 
-<!--==================-->
 # Set Notation
-<!--==================-->
 ∈ = Element of, *belongs to* or *in*
 ∪ = Union
 ∩ = Intersection
 
-<!--==================-->
 # Rules of Signed Numbers
-<!--==================-->
 ## _ADDITION_
 - + & + = +
 - - & - = -
@@ -83,9 +77,7 @@
 -4  /  2 = -2 -- Neg
 ```````````````````````````````
 
-<!--==================-->
 # Multiples & Divisibility
-<!--==================-->
 - `Multiple`: Result of multiplying a number by an integer. Multiples of 3 is 3,6,9,12..
 - `Common Multiple`: Given 2 numbers (a, b). The multiples that are in union or common
 - `Least Common Multiple (LCM)`: The smallest common multiple
@@ -121,9 +113,7 @@ LCM = 2^4 * 3 * 5 = 240
 - 9: sum of digits is divisible by 9
 - 10: last digit is 0
 
-<!--==================-->
 # Place Values
-<!--==================-->
 - Count the periods to the left and right of decimal point and add them up
 - Each triplet of significant digits is called a `period`
   - A trillion/trillionths has 4 periods
@@ -184,9 +174,7 @@ LCM = 2^4 * 3 * 5 = 240
   - 0.0000000000001  = 10-trillionths
   - 0.00000000000001 = 100-trillionths
 
-<!--==================-->
 # Conversions
-<!--==================-->
 ## _US MEASUREMENTS_
 - 1 foot = 12 inches
 - 1 yard = 03 feet
@@ -210,24 +198,18 @@ LCM = 2^4 * 3 * 5 = 240
   - centi : 0.01
   - milli : 0.001
 
-<!--==================-->
 # Ratios/Proportions
-<!--==================-->
 - `Ratio`: describes relationship between 2 numbers
 - `Proportion`: statement that 2 ratios are equal
 
-<!--==================-->
 # Exponents
-<!--==================-->
 ## _RULES_
 - `Product Rule` : x^a * x^b = x^a+b
 - `Quotient Rule`: x^a / x^b = x^a-b
 - `Power Rule`   : (x^a)^b = x^ab
 - `Reciprocation`: x^-n = 1/x^n
 
-<!--==================-->
 # Fractions
-<!--==================-->
 - Ratios of 2 numbers
 - Anatomy: Numerators (top), Denominators (bottom)
 - `Reciprocal`: aka Multiplicative Inverse. For any nonzero real number a, the reciprocal is 1/a. Product of anynumber and its reciprocal is 1
@@ -248,9 +230,8 @@ LCM = 2^4 * 3 * 5 = 240
 a/b = ac / bc
 c/c = 1
 ```````````````````````````
-<!--==================-->
+
 # Radicals
-<!--==================-->
 - When rationalizing, you do not want a sq root in the denominator
   - "rationalizing the denominator"
 - Radicals can be written as a number to a fraction exponent
@@ -274,9 +255,7 @@ if m and n are both negative real numbers
 ## _QUOTIENT RULE_
 - √a / √b = √(a / b)
 
-<!--==================-->
 # Scientific Notation
-<!--==================-->
 - The power refers to the number of 0s
 - Powers of 10
   - 10^1 = 10

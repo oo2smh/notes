@@ -1,11 +1,9 @@
-<!--==================-->
 # Built In Fns
-<!--==================-->
 - Golang is similar to Python in that it has many builtin fns
 - to convert to strings use the `strconv` package
 - Golang uses uppercase letters to export methods
 
-## _TYPES (standard)
+## _TYPES (standard)_
 - use `strconv` pkg
 ```go .....................
 bool()
@@ -53,9 +51,7 @@ copy(dest, src [type]) int
 delete(m map[Type]Type1, key Type)
 ````````````````````````````
 
-<!--==================-->
 # Strings
-<!--==================-->
 - import `strings` package
 - s = `strings`
 
@@ -127,9 +123,7 @@ s.CutPrefix(s, prefix string) (after string, found bool)
 s.CutSuffix(s, suffix string) (before string, found bool)
 `````````````````````````````````
 
-<!--==================-->
 # Slices
-<!--==================-->
 - import `slices` package
 ```go .......................
 sl.Collect[E any](seq iter.Seq[E]) []E
@@ -147,9 +141,7 @@ s1.Replace()
 s1.Sorted()
 ````````````````````````````
 
-<!--==================-->
 # Input/Output
-<!--==================-->
 - import `fmt`
 - There are 3 variants
   1. Plain
@@ -165,9 +157,7 @@ fmt.Print(f,ln)(a ...any)(n int, err error)
 fmt.Sprint(f,ln)(a ...any) string
 ````````````````````````````
 
-<!--==================-->
 # Maps
-<!--==================-->
 - import `maps`
 - maps is in `golang.org/x/exp/maps`
 
@@ -185,9 +175,7 @@ maps.Keys(m M) []K
 maps.Values(m M) []K
 ``````````````````````````````
 
-<!--==================-->
 # Math
-<!--==================-->
 - import `math` pkg
 - import `math/rand`
 
@@ -211,9 +199,7 @@ rand.Intn(int) int
 rand.Float64() float64
 ````````````````````````````
 
-<!--==================-->
 # Time
-<!--==================-->
 - import `time` pkg
 
   ## _TIME TYPE_
@@ -244,9 +230,7 @@ time.Duration.Minutes()
 time.Duration.Hours()
 ````````````````````````````
 
-<!--==================-->
 # Regexp
-<!--==================-->
 - `regexp` pkg
 - must compile a regexp into a Regexp object 1st
   - if pattern isn't valid, it returns an error

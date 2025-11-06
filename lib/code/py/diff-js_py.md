@@ -1,6 +1,4 @@
-<!--==================-->
 # General
-<!--==================-->
 - Py is stricter when it comes to errors
 - Js is forgiving and more loose
 - Py seems to focus much more on conciseness
@@ -10,9 +8,7 @@
   - interpreter provided by host env
 - Py is independent (Language itself comes built with an interpreter)
 
-<!--==================-->
 # Python is Stricter
-<!--==================-->
 ## _ARGUMENTS_
 - additional arguments
   - js ignores
@@ -21,26 +17,18 @@
   - js sets to undefined
   - py raises an error
 
-<!--==================-->
 # Coercion
-<!--==================-->
 - Js coerces much more
 
-<!--==================-->
 # Truthy & Falsy Values
-<!--==================-->
 - JS: 🎀FUN NEO (false, undefined, null, NaN, "", 0)
 - PY: (0s, False, None, Empty ("",[],()))
 
-<!--==================-->
 # Logical Operators
-<!--==================-->
 - [and or not] [&& || !]
 - Both return last evaluated value
 
-<!--==================-->
 # Loops
-<!--==================-->
 - python doesn't have do-while loops!
   - have to reconstruct it using while loops + break condition
 

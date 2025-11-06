@@ -1,11 +1,7 @@
-<!--==================-->
 # Overview
-<!--==================-->
 - Notes will cover Algebra 1 & 2. It will not cover linear algebra
 
-<!--==================-->
 # Glossary
-<!--==================-->
 - Purpose: recognize patterns, follow procedures, become a logical thinker
 
 ## _NOUNS_
@@ -93,17 +89,13 @@ a = b and b = c, then a = c
 a(b + c) = ab + ac
 ```
 
-<!--==================-->
 # Order of Operations
-<!--==================-->
 - Parenthesis+: Grouping symbols
 - Exponents
 - Multiplication/Division
 - Addition/Subtraction
 
-<!--==================-->
 # Inequalities
-<!--==================-->
 - `Law of Trichotomy`: An expression with 2terms can have one of 3 relationships
   - `a == b`
   - `a > b`
@@ -111,9 +103,7 @@ a(b + c) = ab + ac
 - `Law of Negative Numbers`: When multiplying/dividing both sides of an inequality, reverse the inequality sign
 - `Number line notation`: Similar to the fn notation. Open circle is exclusive. Closed circle is inclusive.
 
-<!--==================-->
 # Factoring
-<!--==================-->
 ## _OVERVIEW_
 - `Root`: Polynomial is a solution where the polynomial equals zero. Or due to the rational root theorem, find the factor(s) that equal 0
 - There are a lot of factoring techniques specifically for quadratics and one for cubes
@@ -166,9 +156,7 @@ a(b + c) = ab + ac
 - Zero Theorem: AB = 0
 - Can get some possible values of x after factoring a quadratic
 
-<!--==================-->
 # Exponents and Radicals
-<!--==================-->
 ## _POWER OF 0_
 - Anything to the power of 0 is 1
   - `x^0 = 1`
@@ -185,9 +173,7 @@ a(b + c) = ab + ac
     - `Conjugate`: Same terms with the opposite sign in between
       `[5 - rad(3)][5 + rad(3)]`
 
-<!--==================-->
 # Ratios and Proportions
-<!--==================-->
 ## _RATIOS REPRESENTATIONS_
 - Fractions
   - `Complex Fraction`: An expression with fraction(s) in either the numerator or denominator or both
@@ -203,15 +189,11 @@ a(b + c) = ab + ac
   - Simple Interest `I = Prt`
   - Total account balance
 
-<!--==================-->
 # Advanced Equations
-<!--==================-->
 - Equations with decimals, fractions, radicals, multivariables
 - `Abstract Fractional Equation` = An equation that has at least 1 fraction with a var in its denominator
 
-<!--==================-->
 # Systems of Equations
-<!--==================-->
 - Systems of 3 equations
 - Nonlinear equations
 
@@ -219,9 +201,7 @@ a(b + c) = ab + ac
 1. Uniform motion problems `Distance = Rate * Time`
 2. Number word problems
 
-<!--==================-->
 # Exponents and Radicals
-<!--==================-->
 ## _NEGATIVE BASES_
 - `-3^2 = -9` vs `(-3)^2 = 9`
   - Exponents are done first
@@ -251,9 +231,7 @@ a(b + c) = ab + ac
       `[5 - rad(3)][5 + rad(3)]`
   -  Consecutive integers
 
-<!--==================-->
 # Graphing
-<!--==================-->
 - Parallel and perpendicular lines
 - Parabola (`x^2`)
   - Vertex
@@ -319,9 +297,7 @@ a(b + c) = ab + ac
 4. Evaluate at test pts
 5. Solution
 
-<!--==================-->
 # Logarithms
-<!--==================-->
 - Logarithms: No subscript and it's implied that you're dealing with the default log aka `common logarithm`
 - Log₁Value = Exponent
   - Base^1 = Value
@@ -365,9 +341,7 @@ a(b + c) = ab + ac
   - Along x-axis: `-log₁(base)`
   - Along y-axis: `-log₁(-base)`
 
-<!--==================-->
 # Exponential
-<!--==================-->
 - `Exponential Fns`: Fns in which the vars is the exponent
 - Template: `f(x) = ab^x`
   - a = Initial value: Gives you the y-intercept

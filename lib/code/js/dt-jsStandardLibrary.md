@@ -1,6 +1,4 @@
-<!--==================-->
 # 🗺️ Legend
-<!--==================-->
 ```md
 ⏎: return
 [value = 10]: opt param = defaultValue
@@ -14,9 +12,8 @@
 🐛: coercion
 ()P: (Datatype).prototype
 ```
-<!--==================-->
+
 # 🔮 Syntax
-<!--==================-->
 > [!Important]
 > [Visual Figjam representation](https://www.figma.com/board/OCKKQ9Z2JDiNW1aQWUTeHd/js-standardLibrary?node-id=0-1&t=E1rzdR5aLwOMXgYK-1)
 
@@ -233,9 +230,7 @@ console.trace([objects]
 ```
 </details> <!---------------------->
 
-<!--==================-->
 # 🪲 Deets
-<!--==================-->
 ## _STRINGS_
 > [!Note]
 > Strings are array-like and therefore share many similarities to arrays. In particular, they share some of the search and access methods.
@@ -283,38 +278,37 @@ gotchas = 'surrogate pairs count as length of 2'
 - Indexed Search `SP.indexOf`, `SP.lastIndexOf`, `SP.search()`
 - Iterable/Array `SP.match()`, `SP.matchAll()`
 
-```md
-# SP.startsWith(searchStr = 'undefined', [pos = 0])
-# SP.endsWith(searchStr = 'undefined', [pos = 0])
-# SP.includes(searchStr = 'undefined', [pos = 0])
-<!--==================-->
+```js
+ SP.startsWith(searchStr = 'undefined', [pos = 0])
+ SP.endsWith(searchStr = 'undefined', [pos = 0])
+ SP.includes(searchStr = 'undefined', [pos = 0])
+
 - par-searchStr = 'Any non-regex valid value'
 - par-pos = 'position to start search'
 - return = 'boolean'
 - invalid_args = 'regex -> TypeError'
 - coercion = 'arg coerced to str'
 
-# SP.match(regex = /(?:)/)]
-<!--==================-->
+ SP.match(regex = /(?:)/)]
 - return = 'array of matches || null (no matches)'
 - coercion = 'arg -> regex'
 - gotcha = 'use of g flag to get all matches, otherwise capture 1st match'
 - gotcha = 'empty arg -> returns '']'
 
-# SP.matchAll(regex = /(?:)/)]
+ SP.matchAll(regex = /(?:)/)]
 <!--==================-->
 - return = 'iterator obj of matches or empty iterator (no matches)'
 - coercion = 'arg -> regex'
 - errors = 'g flag is not present'
 
-# SP.indexOf(searchStr = 'undefined', [pos = 0])
-# SP.lastIndexOf(searchStr = 'undefined', [pos = 0])
+ SP.indexOf(searchStr = 'undefined', [pos = 0])
+ SP.lastIndexOf(searchStr = 'undefined', [pos = 0])
 <!--==================-->
 - return = 'idx of 1st/last occurrence of searchStr || -1 (not found)'
 - coercion = 'arg coerced to str'
 - gotcha = 'empty searchStr results in pos'
 
-# SP.search(regex = /(?:)/)
+ SP.search(regex = /(?:)/)
 <!--==================-->
 - usage = 'regex version of indexOf'
 - return = 'idx of 1st match || -1 (not found)'
@@ -330,9 +324,8 @@ gotchas = 'surrogate pairs count as length of 2'
 > When it comes to string access methods, there are 2 flavors: Single char access or multiple character access. Single character access methods all expect an idx integer. If a non-integer value is used as an argument, it will be coerced into an integer. If the converted integer is not a valid idx, the method will fail silently. `at()` and `codePointAt()` will fail silently with the return value of `undefined`. `charAt()` will fail silently with an empty string. Lastly, `charCodeAt()` will fail with `NaN`.As far as I know, single character access methods all fail silently. The other difference is that `at()` supports negative indicies, whereas the other methods do not accept negative numbers. If you do use negative numbers, it will be changed to 0.
 >
 > Bracket notation `[]` can also be used for single char access. Bracket notation does not support negative indices.
-```md
+```js
 # SINGLE CHAR ACCESS
-<!--==================-->
 param = 'idx integer'
 coercion = 'arg -> int'
 
@@ -372,7 +365,7 @@ gotcha = 'idxEnd > idxStart => they are swapped'
 <details><summary>🐜 Manipulation Methods</summary>
 
 ### Elongation
-```md
+```js
 # SP.pad(Start/End)(targetLength, [padString = ' '])
 <!--==================-->
 return = 'str of targetLength with padString added to start/end'
@@ -411,7 +404,7 @@ return = 'new str with a-z chars (lower|upper)cased'
 ```
 
 ### To Array
-```md
+```js
 # SP.split(sep, [limit])
 <!--==================-->
 par-sep = '(str, regex) pattern where split should occur'
@@ -424,7 +417,7 @@ return = 'array of elems'
 <details><summary>🐜 Core Methods</summary>
 
 ### Static
-```md
+```js
 # Array.isArray(value)
 <!--==================-->
 usage = 'a better typeof'
@@ -451,7 +444,7 @@ errors = 'setting length to neg num or num > 2^32'
 ```
 
 ### Destructive
-```md 🎀 USPP FSRS
+```js 🎀 USPP FSRS
 # AP.(unshift/push)(...elems)
 <!--==================-->
 action = 'Adds ...elems to calling array (start/end)'
@@ -493,7 +486,7 @@ b-a = 'descending order'
 ```
 
 ### Non-Destructive
-```md JF I LISA (Jimmy Fallon I Lisa)
+```js JF I LISA (Jimmy Fallon I Lisa)
 # AP.join(glue = ',')
 <!--==================-->
 return = 'string separated by glue'
@@ -505,7 +498,7 @@ par-depth = 'level to be flattened'
 return = 'new array with sub-array elems concatenated to it'
 ```
 
-```md 🎀 I LISA
+```js 🎀 I LISA
 # String Counterparts
 - These are essentially the same as the str methods. Look above for more info
 
@@ -521,8 +514,8 @@ AP.at(idx)
 
 > All higher order fns have a `callbackFn(elem, idx, array)` and an optional `[thisArg]` The exception is `reduce` and `reduceRight`. It has an additional param `total/accumulator`. All higher order fns that return an array will return a shallow array. There are no destructive methods in this group.
 
-```md 🎀 MR RES 5FFFFF
-# ALL
+```js 🎀 MR RES 5FFFFF
+#  ALL
 <!--==================-->
 callbackFn(elem,idx,arr) = '1st param'
 thisArg = '2nd param'
@@ -591,7 +584,7 @@ special = 'works with NaN and nullish val'
 ```
 
 ### Creation
-```md
+```js
 # Object.create(proto, [propsObj])
 <!--==================-->
 par-proto = 'proto obj of newly created obj'
@@ -691,7 +684,7 @@ max-gotcha = 'Returns -Infinity if no args'
 
 <details><summary>🐜 Rounding</summary>
 
-```md
+```js
 # Math.round(num)
   * [Math.floor(num)]
   * [Math.ceil(num)]
@@ -736,9 +729,7 @@ fullYear = 'year'
 ```
 </details>
 
-<!--==================-->
 # 💭 Forum
-<!--==================-->
 ## _ARRAY CONCEPTS_
 <details><summary>🐝 Mutate The Caller</summary>
 
@@ -839,9 +830,7 @@ we subtract min is important too!
 ```
 </details> <!---------------------->
 
-<!--==================-->
 # 🧪 Examples
-<!--==================-->
 ## _STRINGS_
 <details><summary>🐜 String.fromCharCode</summary>
 

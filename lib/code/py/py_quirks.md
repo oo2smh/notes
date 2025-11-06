@@ -1,6 +1,4 @@
-<!--==================-->
 # Scope
-<!--==================-->
 - [LS Scope Exercises (1-5)](https://launchschool.com/exercise_sets/7f3d1745)
 - variable has to be defined before it is used
 - only fns and modules scope variables. NOT ctrl-flow statements like `if/else`
@@ -32,9 +30,7 @@ print(second_value) # NameError second_value is not defined
 - [Clause Scope?](https://launchschool.com/books/python/read/functions_methods)
 
 
-<!--==================-->
 # Fns vs Methods
-<!--==================-->
 ```py
 import math
 print(math.sqrt(5))           # 2.23606797749979

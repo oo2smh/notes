@@ -1,8 +1,6 @@
 - `Geometry`: Math related to size, shapes and angles
 
-<!--==================-->
 # Logic
-<!--==================-->
 - `Theorem`: Statement or proposition that is rigorously proven to be true based on previously estaqblished statements. Process of proving a theorem involves logical deduction.
 - `Deductive Reasoning`: Process of drawing logically certain conclusions using an argument
 - `Inductive Reasoning`: Process of forming conjectures that are based on observations
@@ -52,9 +50,8 @@
   - Complementary [90]
   - Supplementary [180]
     - Consecutive Interior Angles (D Angle)
-<!--==================-->
+
 # Anatomy
-<!--==================-->
 ## _3D FIGURES_
 - Pyramids
 - Prisms
@@ -114,9 +111,7 @@
   - Rectangles
   - Parallelograms
 
-<!--==================-->
 # Dimensional Calculations
-<!--==================-->
 ## _2D CALCULATIONS_
 - `Area (A)` = length * width
 - `Perimeter (P)` = Addition of all sides
@@ -188,9 +183,7 @@
   - L = length of arc, C = circumference (total length of circle) `2πr`, m = measure of central angle
   - `m/360 = L/C`
 
-<!--==================-->
 # Trigonometry
-<!--==================-->
 - *Trigonon* = Triangle, *Metry* = Measure
 - Deal wish relationships between angles/sides of triangles
 
@@ -199,9 +192,7 @@
 - CAH 🎀 A/Hold
 - TAN 🎀 On/Arthur
 
-<!--==================-->
 # Transformations
-<!--==================-->
 - Shifts, reflections, rotations
 
   ### Symmetry

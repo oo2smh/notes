@@ -1,6 +1,4 @@
-<!--==================-->
 # 📣 Shorthands
-<!--==================-->
 ## _MODAL SHIFTS_
 > [!Note]
 > The main vim modes are `Insert` and `Normal`. In `Visual Block Mode` if you press `i` and make a change, it will make that change in all the lines the cursor is active. However, if you cancel with `<C-c>` in visual block mode, it will not do that. To escape out `Visual Block Mode` use the other 2 keyboard shortcuts instead (`Esc` or `<C-[>`.
@@ -225,9 +223,7 @@ o: change cursor endpoint
 gv: select last visual selection
 ```
 
-<!--==================-->
 # 👎 Incompatible With Coderpad
-<!--==================-->
 ```yaml
 # MOTIONS
 H/M/L: High, Mid, Low
@@ -235,8 +231,6 @@ i(C-w, C-h): Insert specific delete shorthands
 Ex cmds: Most ex cmds don't work
 ```
 
-<!--==================-->
 # 📗 Resources
-<!--==================-->
 - [Vim Macros Are Just Registers](https://www.youtube.com/watch?v=bTmEqmtr_6I)
 

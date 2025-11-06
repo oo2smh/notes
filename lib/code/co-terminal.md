@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ## _BIGGER CXT_
 ```md
 - Interface
@@ -60,9 +58,7 @@
 - exit codes
 ```
 
-<!--==================-->
 # 📗 Dictionary
-<!--==================-->
 ## _BIGGER CXT_
 - *Interface* = General term referring to the mechanism in which to ctrl a given input. It also refers to what is available to the public versus what is made private. The public methods which are meant to be used is the interface. Private methods are abstracted away.
   - Cmd-line interface: Text-based interface
@@ -111,7 +107,6 @@
   - *tmp*: temporary files meant to be deleted
   - *usr*: refers to programs meant to be used by all users
   - *usr/local/bin*: binaries local to that specifric user
-
 
 ## _PROGRAMS_
 > A program only understands 1s and 0s. 1s and 0s don't make much sense for humans. So humans created programming languages. The code that humans write in programming languages is called source code. The code that machines understand is called machine code. There are different ways to go from source --> machine code. Your computer's CPU hardware has been designed to execute machine code.

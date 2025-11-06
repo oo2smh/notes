@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ```md
 - Expressions
 🎀 ANT FARM PLC (Ant Farm Programmable Logic Controller)
@@ -30,9 +28,8 @@
   - Rest
   - Spread
 ```
-<!--==================-->
+
 # 🪲 Deets
-<!--==================-->
 ## _Expressions_
 > [!Important]
 >Expressions are anything that evaluates to a value. The value that it evaluates to is called a `return value`. This includes simple `primary` values such as (1, 'string', true). However, it typically refers to expressions with more than 1 value. Most of the expressions are based off of the operator that it uses. These types of expressions are called `operations`. The other expressions I am calling `other-expressions`. Original I know.
@@ -293,16 +290,13 @@ rest prop: rest syntax used as last part of destrcturing syntax
 rest param: last param of fn. Bundles args of an array
 default param: concise way to set default param in fn param
 ```
-<!--==================-->
+
 # 🧪 Examples
-<!--==================-->
 ```js
 // Operations
 let x = 3;
 let y = x > 3 ? 'a' : 'b'
 ```
 
-<!--==================-->
 # 📗 Reference
-<!--==================-->
 - [Obj to Primitive Coercion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#type_coercion)

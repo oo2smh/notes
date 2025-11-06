@@ -1,19 +1,13 @@
-<!--==================-->
-# 🏃🏻‍♂️‍➡️ Tldr
-<!--==================-->
+# 🐧 Tldr
 - **What**: version control system. Software that allows you to take snapshots.
 - **Why**: Manage history. Undo past work. Safety net against unwanted changes.
 - **How**: Internal plumbing cmds which are abstracted into porcelain cmds.It stores data as objects and creates a unique SHA-1 identifier (commit id). All of the changes are linked to the unique SHA-1 hash and saved.
 
-<!--==================-->
 # 📘 References
-<!--==================-->
 - [Boot.Dev](https://www.boot.dev/tracks/backend)
 - [States of Files](https://www.boot.dev/lessons/f330368c-734c-4708-971b-2ad33b4b7f52)
 
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ## _.GIT STRUCTURE_
 ~~~ md
 .git/
@@ -78,9 +72,7 @@
 - normal mode
 - merge, rebase, stash, bisect
 
-<!--==================-->
 # 👊🏻 Syntax
-<!--==================-->
 > All cmds should be prefixed with git
 
 ## _PLUMBING CMDS_
