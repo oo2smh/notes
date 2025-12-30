@@ -3,7 +3,7 @@
 
 # Folder Structure
 1. bin
-  * big-pic executables
+  * big-picture executables
 2. etc
   * systems and config
   - keyboard shortcuts

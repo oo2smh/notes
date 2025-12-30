@@ -100,5 +100,4 @@
 ## 🔐 Databases / Servers
 - postgresql	PostgreSQL database server
 
-## 🎮 Gaming
 

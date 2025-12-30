@@ -1,6 +1,4 @@
-<!--==================-->
 # 🔑 Keywords
-<!--==================-->
 ## _BKGND NOUNS_
 - Data
 - Databases
@@ -60,9 +58,7 @@
   - DML
   - DQL
 
-<!--==================-->
 # 👊🏻 Syntax
-<!--==================-->
 ## _DDL_
 - CREATE (TABLE, DATABASE)
 - ALTER (TABLE, COLUMN)
@@ -105,14 +101,4 @@
   - AND, OR, NOT
   - IS ___
   - BETWEEN, IN
-
-<!--==================-->
-# 🤼 Quests
-<!--==================-->
-- [ ] Create a database
-- [ ] Delete a database
-- [ ] Create a table with 3 columns (name,age,height) with char(50), integer, integer
-- [ ] Query the whole table
-- [ ] Add 3 entries
-- [ ] Remove last entry
 

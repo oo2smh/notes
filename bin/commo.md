@@ -5,7 +5,7 @@
 # 🔑 Keywords
 ```yaml Universal Principles
 # UNIVERSAL PRINCIPLES
-Conciseness: Be Abrupt. To the point
+Conciseness: Be Abrupt and to the point
 Abstraction: Finetune level of detail
 Precision: Use the right words for the job
 
