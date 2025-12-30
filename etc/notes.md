@@ -3,7 +3,7 @@
 
 # Folder Structure
 1. bin
-  * big-pic executables
+  * big-picture executables
 2. etc
   * systems and config
   - keyboard shortcuts
@@ -18,13 +18,13 @@
 - optional `zip` folder in bin and lib for archived notes
 
 # Formatting
-## HEADERS_
+## *HEADERS*
 - Header 1 will be separated by a frame
 - Header 2 will be in UPPERCASE
   - This is to add visual distinction when notes are viewed from Github
 - Header 3+ will be indented
 
-## FILE PREFIXES
+## *FILE PREFIXES*
 - Files will be prefixed and followed by a `-`
 - This is an indicator as to what type of file the note is
   - `_` persistent files
@@ -33,7 +33,7 @@
   - `kc` keymaps, commands to memorize
   - `ls` list note (ie: a list of problems)
 
-## _TEMPLATES_
+## *_TEMPLATES_*
   ### Bin Sections
   1. tldr;
   2. references

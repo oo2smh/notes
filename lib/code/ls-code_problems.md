@@ -122,8 +122,6 @@
 - [CW:Scramblies](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/javascript)
 - [CW:Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript)
 
-### Swapping
-
 ### Addition/Deletion
 - [CW:Anagram Difference](https://www.codewars.com/kata/5b1b27c8f60e99a467000041/train/javascript)
 - [CW:Backspaces in string](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/javascript)
