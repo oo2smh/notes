@@ -6,7 +6,11 @@
 - `Proposition`: statement that is either true or false
   - formed through `logical operators` and `variables`
     - `or (|,v), not (~,!), and (^)`
+<<<<<<< HEAD
       - disjunction, negation, disjunction
+=======
+      - disjunction, negation, conjunction
+>>>>>>> dev
     - propositional notation of `p(roposition),q(conseQuence)`
   - conditional: if p then q or biconditional (p if and only if q)
     - Types: inverse, converse, implication(conditional), contrapositive
@@ -51,6 +55,10 @@
 - `Intervals`: sets can have limits (inclusive) or [exclusive] (ie: (1,2), [1,2])
 - `Cardinality`: size of set, shown in |(# here)|
 - There are a lot of laws called `set identities` used to manipulate sets to take on a different form
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 ### Special Sets
 - `null`: empty set
 - `singleton`: 1 item set

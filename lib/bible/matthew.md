@@ -1,4 +1,5 @@
 # 1
+<<<<<<< HEAD
 ## *THE GENEALOGY OF JESUS CHRIST*
 1 The book of the genealogy of Jesus Christ, the Son of David, the Son of Abraham:
 2 Abraham begot Isaac, Isaac begot Jacob, and Jacob begot Judah and his brothers.
@@ -229,3 +230,42 @@ J# Go the Second Mile
 32 For after all these things the Gentiles seek. For your heavenly Father knows that you need all these things.
 33 But seek first the kingdom of God and His righteousness, and all these things shall be added to you.
 34 Therefore do not worry about tomorrow, for tomorrow will worry about its own things. Sufficient for the day is its own trouble.
+=======
+## *THE ANCESTORS OF JESUS the MESSIAH*
+1. This is a record of the ancestors of Jesus the Messiah, a descendant of David and of Abraham:
+2. Abraham was the father of Isaac. Isaac was the father of Jacob. Jacob was the father of Judah and his brothers.
+3. Judah was the father of Perez and Zerah (whose mother was Tamar). Perez was the father of Hezron. Hezron was the father of Ram.
+4. Ram was the father of Amminadab. Amminadab was the father of Nahshon. Nahshon was the father of Salmon.
+5. Salmon was the father of Boaz (whose mother was Rahab). Boaz was the father of Obed (whose mother was Ruth). Obed was the father of Jesse.
+6. Jesse was the father of King David. David was the father of Solomon (whose mother was Bathsheba, the widow of Uriah).
+7. Solomon was the father of Rehoboam. Rehoboam was the father of Abijah. Abijah was the father of Asa.
+8. Asa was the father of Jehoshaphat. Jehoshaphat was the father of Jehoram. Jehoram was the father of Uzziah.
+9. Uzziah was the father of Jotham. Jotham was the father of Ahaz. Ahaz was the father of Hezekiah.
+10. Hezekiah was the father of Manasseh. Manasseh was the father of Amon. Amon was the father of Josiah.
+11. Josiah was the father of Jehoiachin and his brothers (born at the time of the exile to Babylon).
+12. After the Babylonian exile: Jehoiachin was the father of Shealtiel. Shealtiel was the father of Zerubbabel.
+13. Zerubbabel was the father of Abiud. Abiud was the father of Eliakim. Eliakim was the father of Azor.
+14. Azor was the father of Zakdok. Zadok was the father of Akim. Akim was the father of Eliud.
+15. Eliud was the father of Eleazar. Eleazar was the father of Matthan. Matthan was the father of Jacob.
+16. Jacob was the father of Joseph, the husband of Mary. Mary gave birth to Jesus, who is called the Messiah.
+17. All those listed above include fourteen generations from Abraham to David, fourteen from David to the Babylonian exile, and fourteen from the Babylonian exile to the Messiah.
+
+``` yaml
+Abraham, Issac, Jacob, Judah, Perez (Tamar),
+Hezron, Ram, Amminadab, Nahshon, Salmon,
+Boaz (Rahab), Obed (Ruth), Jesse, King David, Solomon (Bathsheba), Rehoboam,
+Abijah, Asa, Jehoshaphat, Jehoram, Uzziah, Jotham, Ahaz, Hezekiah, Manasseh, Josiah,
+Jehoiachin, Shealtiel, Zerubbabel, Abiud, Eliakim, Azor, Azor, Zadok, Akim, Eliud,
+Eleazar, Matthan, Jacob, Joseph
+```
+
+## *THE BIRTH OF JESUS THE MESSIAH*
+18. This is how Jesus the Messiah was born. His mother, Mary, was engaged to be married to Joseph. but before the marriage took place, while she was still a virgin, she became pregnant through the power of the Holy Spirit.
+19. Joseph, to whom she was engaged, was a righteous man and did not want to disgrace her publicly, so he decided to break the engagement quietly.
+20. As he considered this, an angel of the Lord appeared to him in a dream. "Joseph, son of David," the angel said, "do not be afraid to take Mary as your wife. For the child within her was conceived by the Holy Spirit.
+21. And she will have a son, and you are to name him Jesus, for he will save his people from their sins."
+22. All of this occurred to fulfill the Lord's message through his prophet:
+23. "Look! The virgin will conceive a child! She will give birth to a son, and they will call him Immanuel, which means 'God is with us.'"
+24. When Joseph woke up, he did as the angel of the Lord commanded and took Mary as his wife.
+25. But he did not have sexual relations with her until her son was born. And Joseph named him Jesus.
+>>>>>>> dev

@@ -1,0 +1,162 @@
+/* main */
+@layer tokens, base, text, components, layout, utils, fx;
+
+@import "tokens.css" layer(tokens);
+@import "base.css" layer(base);
+@import "text.css" layer(text);
+@import "components.css" layer(components);
+@import "layout.css" layer(layout);
+@import "utils.css" layer(utils);
+@import "fx.css" layer(fx);
+
+:root {
+  /* ZONE: FONT */
+  --ff: "Firava", system-ui, sans-serif; /* includes body/ui */
+  --ff-heading: "Bitter", -apple-system, "Segoe Ui", Roboto, sans-serif;
+
+  --h1: 2.5rem;
+  --h2: 2rem;
+  --h3: 1.5em;
+  --h4: 1.25rem;
+  --fs: 1.125rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  @media (width >= 40rem) {
+    --h1: 3.5rem;
+    --h2: 2.75rem;
+    --h3: 1.75rem;
+    --h4: 1.5rem;
+  }
+
+  @media (width >= 80rem) {
+    --h1: 4.25rem;
+    --h2: 3.25rem;
+    --h3: 2rem;
+    --fs: 1.25rem;
+  }
+
+  /* FW, Letter-Spacing, Line-height */
+  --fw: 400;
+  --fw1: 600;
+  --fw2: 700;
+  --fw3: 900;
+
+  --lsn2: -0.05em;
+  --lsn1: -0.02em;
+  --ls1: 0.05em;
+  --ls2: 0.1em;
+  --ls3: 0.2em;
+
+  --lhn1: 0.8;
+  --lh: 1;
+  --lh1: 1.2;
+  --lh2: 1.4;
+  --lh3: 1.6;
+
+  /* ZONE: SPACE */
+  /* space mini (icons, tight spacing) */
+  --spmin: 0.25rem;
+  --spmin1: 0.5rem;
+  --spmin2: 0.75rem;
+
+  /* main (components) */
+  --gap: 1.25rem;
+  --sp: 1rem;
+  --sp1: 1.25rem;
+  --sp2: 1.5rem;
+  --sp3: 2rem;
+  --sp4: 2.5rem;
+  --sp5: 3rem;
+
+  /* pad block page */
+  --spmax: 3.5rem;
+  --spmax1: 4.25rem;
+  --spmax2: 5rem;
+
+  --pi-pg: 1rem;
+  --pb-ftr: 1.5rem 2rem;
+
+  @media (width >= 64rem) {
+    & {  --pi-pg: 2rem; }
+  }
+
+  @media (width >= 40rem) {
+    --spmax: 5.5rem;
+    --spmax1: 6.5rem;
+    --spmax2: 7rem;
+  }
+
+  @media (width >= 80rem) {
+    --spmax: 6rem;
+    --spmax1: 7.75rem;
+    --spmax2: 9rem;
+  }
+
+  --mw: 76.75rem; /* 1228 grid */
+  --mw1: 120rem; /* 1920 */
+  --mw2: 160rem; /* 2560 */
+  --mw-prose: 44rem; /* 704 */
+  --mw-card: 24.75rem;
+  --mw-card-lg: 37.75rem;
+
+  /* ZONE: COLORS */
+  color-scheme: light dark;
+
+  --bg: white;
+  --bg1: hsl(210 10% 97%);
+  --bg2: hsl(210 10% 90%);
+  --bg-inv: var(--fg);
+
+  --fg: hsl(210 10% 5%);
+  --fg1: hsl(0 0% 43%);
+  --fg2: hsl(0 0% 62%);
+  --fg-inv: white;
+  --line: hsl(210 0% 85%);
+  --hr: var(--line);
+  --bdr: var(--line);
+
+  --brand-light: hsl(0 90% 65%);
+  --brand: hsl(0 80% 40%);
+  --brand-dark: hsl(0 80% 25%);
+
+  /* states */
+  --bg-info: hsl(210 100% 97%);
+  --bdr-info: hsl(210 100% 77%);
+  --bg-warn: hsl(28 100% 97%);
+  --bdr-warn: hsl(28 100% 87%);
+  --bg-danger: hsl(0 100% 97%);
+  --bdr-danger: hsl(0 100% 77%);
+  --bg-success: hsl(150 100% 97%);
+  --bg-success: hsl(150 50% 65%);
+
+  @media (prefers-color-scheme: dark) {
+    --bg: hsl(210 0% 10%);
+    --bg1: hsl(210 7% 13%);
+    --bg2: hsl(210 5% 17%);
+    --fg: hsl(210 10% 95%);
+    --fg1: hsl(210 2% 61%);
+    --fg2: hsl(210 10% 44%);
+    --fg-inv: black;
+    --line: hsl(210 0% 25%);
+
+    --brand-light: hsl(0 90% 65%);
+    --brand: hsl(355 100% 60%);
+    --brand-dark: hsl(0 80% 25%);
+
+    --bg-info: hsl(210 50% 17%);
+    --bdr-info: hsl(210 100% 80%);
+    --bg-warn: hsl(35 77% 17%);
+    --bdr-warn: hsl(28 100% 87%);
+    --bg-danger: hsl(0 57% 17%);
+    --bdr-danger: hsl(0 100% 77%);
+    --bg-success: hsl(150 100% 97%);
+    --bdr-success: hsl(150 50% 65%);
+  }
+
+  /* ZONE: SHADOWS */
+  --ink: 0 0% 0%;
+  --sh: 0px 0.7px 1.5px hsl(var(--ink) / 0.02), 0px 3px 9px hsl(var(--ink) / 0.03);
+  --sh1: 0px 0.8px 3px hsl(var(--ink) / 0.02), 0px 2px 9px hsl(var(--ink) / 0.03), 0px 2px 8px hsl(var(--ink) / 0.04);
+  --sh2: 0px 0.8px 3px hsl(var(--ink) / 0.02), 0px 2px 9px hsl(var(--ink) / 0.03), 0px 2px 8px hsl(var(--ink) / 0.04);
+}
